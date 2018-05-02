@@ -1,0 +1,1635 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-21 23:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: add.php:13 include/page.php:201
+msgid "Ajout"
+msgstr ""
+
+#: add.php:93 show.php:73
+msgid "Ajout d'une pièce"
+msgstr ""
+
+#: add.php:103
+msgid "Aucun recueil sélectionné"
+msgstr ""
+
+#: add.php:110
+msgid ""
+"Vous n'avez pas les permissions nécessaires pour ajouter une pièce à ce "
+"recueil"
+msgstr ""
+
+#: add.php:122 add.php:954 resultats.php:330 update.php:67
+msgid "Veuillez renseigner tous les champs"
+msgstr ""
+
+#: add.php:183 add.php:663
+msgid "Une erreur est survenue lors de l'upload de l'image jpeg"
+msgstr ""
+
+#: add.php:196 add.php:676
+msgid "Une erreur est survenue lors de l'upload du fichier finale"
+msgstr ""
+
+#: add.php:208 add.php:688
+msgid "Une erreur est survenue lors de l'upload de l'incipit en jpeg"
+msgstr ""
+
+#: add.php:218
+msgid "Vous n'avez pas entré de fichier musicXML"
+msgstr ""
+
+#: add.php:227
+msgid "Erreur lors de l'ouverture du fichier xml"
+msgstr ""
+
+#: add.php:239 add.php:702
+msgid "Certains titres sont très proches de celui que vous avez entré."
+msgstr ""
+
+#: add.php:240 add.php:703
+msgid "Veuillez vérifier si la pièce n'existe pas déjà."
+msgstr ""
+
+#: add.php:241 add.php:704
+msgid "Les titres correspondants sont :"
+msgstr ""
+
+#: add.php:287
+msgid "La pièce n'a pas été ajoutée dans la base de données"
+msgstr ""
+
+#: add.php:368
+msgid "La pièce a déja été enregistrée"
+msgstr ""
+
+#: add.php:374 add.php:388
+msgid "La pièce existe déjà dans le recueil"
+msgstr ""
+
+#: add.php:427 add.php:555 add.php:914
+msgid "La pièce a été ajoutée au recueil"
+msgstr ""
+
+#: add.php:427 add.php:555 add.php:914
+msgid "de la base"
+msgstr ""
+
+#: add.php:428 add.php:918 add.php:1133
+msgid "La procédure a été exécutée avec succès"
+msgstr ""
+
+#: add.php:748
+msgid "Aucun recueil n'a été entré dans la base de données"
+msgstr ""
+
+#: add.php:940 show.php:142
+msgid "Ajout d'un recueil"
+msgstr ""
+
+#: add.php:961
+msgid "Erreur aucune base spécifiée"
+msgstr ""
+
+#: add.php:972 show.php:148
+msgid "La base choisie n'existe pas"
+msgstr ""
+
+#: add.php:1004
+msgid "Ce recueil existe déjà dans la base de donnée"
+msgstr ""
+
+#: add.php:1020 add.php:1036
+msgid "Erreur lors de l'upload du fichier image_titre"
+msgstr ""
+
+#: add.php:1065
+msgid "Vous n'êtes pas le propriétaire de la base"
+msgstr ""
+
+#: add.php:1065
+msgid "dont le propriétaire est"
+msgstr ""
+
+#: add.php:1066
+msgid "Le programme n'a donc pas ajouté le recueil à cette base."
+msgstr ""
+
+#: add.php:1132
+msgid "Ajout du recueil dans la base"
+msgstr ""
+
+#: add.php:1147 show.php:203
+msgid "Ajout d'une base"
+msgstr ""
+
+#: add.php:1153
+msgid "Veuillez renseigner tous les champs\n"
+msgstr ""
+
+#: add.php:1160
+msgid "Erreur : cette base existe déjà"
+msgstr ""
+
+#: add.php:1175
+msgid "Une erreur est survenue lors de l'upload de fichier banner"
+msgstr ""
+
+#: add.php:1256 include/check_serv_dev.php:11
+msgid "Attention"
+msgstr ""
+
+#: add.php:1259
+msgid "Vous n'êtes pas autorisé à consulter cette page"
+msgstr ""
+
+#: add.php:1262
+msgid "Veuillez vous connecter"
+msgstr ""
+
+#: add.php:1262
+msgid "ici"
+msgstr ""
+
+#: admin.php:9 include/page.php:202 include/page.php:540
+msgid "Administration"
+msgstr ""
+
+#: admin.php:27
+msgid "Gestion des nouvelles"
+msgstr ""
+
+#: admin.php:28
+msgid "Rédiger une nouvelle"
+msgstr ""
+
+#: admin.php:29 users.php:10 users_groups.php:286
+msgid "Utilisateurs"
+msgstr ""
+
+#: admin.php:30 groups.php:10 users_groups.php:287
+msgid "Groupes"
+msgstr ""
+
+#: admin.php:31 modes.php:11
+msgid "Gestion des modes"
+msgstr ""
+
+#: admin.php:32
+msgid "Téléchargement des fichiers d'export"
+msgstr ""
+
+#: admin.php:33
+msgid "virga"
+msgstr ""
+
+#: admin.php:38 bugs.php:12 bugs.php:45
+msgid "Signaler un bug"
+msgstr ""
+
+#: admin.php:47 admin.php:60 admin.php:74 admin.php:100 links.php:47
+#: links.php:64 links.php:83 links.php:93 links.php:121 links.php:131
+#: modes.php:346 modes.php:404 show.php:421 virga.php:28 virga.php:36
+#: virga.php:317 virga.php:410 virga.php:538 virga.php:551 virga.php:560
+msgid "Erreur"
+msgstr ""
+
+#: admin.php:48 admin.php:75 admin.php:101
+msgid "Les deux mots de passe ne correspondent pas !"
+msgstr ""
+
+#: admin.php:55
+msgid "Mot de passe changé"
+msgstr ""
+
+#: admin.php:61
+msgid "Mot de passe erroné !"
+msgstr ""
+
+#: admin.php:83 admin.php:109
+msgid "Cet identifiant est déja utilisé"
+msgstr ""
+
+#: admin.php:90 admin.php:116 admin.php:283 users_groups.php:59
+msgid "Utilisateur"
+msgstr ""
+
+#: admin.php:90 admin.php:116
+msgid " ajouté!"
+msgstr ""
+
+#: admin.php:132
+msgid ""
+"Vous ne pouvez pas vous supprimer vous-même. Si vous souhaitez vraiment le "
+"faire, merci de contacter l'administrateur."
+msgstr ""
+
+#: admin.php:140
+msgid "Utilisateur supprimé!"
+msgstr ""
+
+#: admin.php:146
+msgid "Vous n'êtes pas autorisé à  supprimer un utilisateur!"
+msgstr ""
+
+#: admin.php:181
+msgid "Vous êtes identifié en tant que"
+msgstr ""
+
+#: admin.php:182
+msgid "Vous possédez les droits d'administration."
+msgstr ""
+
+#: admin.php:188
+msgid "Modifier votre mot de passe"
+msgstr ""
+
+#: admin.php:191
+msgid "Mot de passe actuel"
+msgstr ""
+
+#: admin.php:192
+msgid "Mot de passe souhaité"
+msgstr ""
+
+#: admin.php:193
+msgid "Mot de passe souhaité (vérification)"
+msgstr ""
+
+#: admin.php:202
+msgid "Gérer votre groupe"
+msgstr ""
+
+#: admin.php:210
+msgid "Ajouter l'utilisateur"
+msgstr ""
+
+#: admin.php:219
+msgid "à votre groupe"
+msgstr ""
+
+#: admin.php:237
+msgid "Gérer la base :"
+msgstr ""
+
+#: admin.php:243
+msgid "Les utilisateurs de votre groupe peuvent :"
+msgstr ""
+
+#: admin.php:247 admin.php:255
+msgid "Consulter la base"
+msgstr ""
+
+#: admin.php:248
+msgid "Ajouter des pièces dans la base (et la consulter)"
+msgstr ""
+
+#: admin.php:249 admin.php:257
+msgid "Ne rien faire"
+msgstr ""
+
+#: admin.php:253
+msgid "Les utilisateurs ne faisant pas partie de votre groupe peuvent :"
+msgstr ""
+
+#: admin.php:256
+msgid "Ajouter des piéšces dans la base (et la consulter)"
+msgstr ""
+
+#: admin.php:276 admin.php:293
+msgid "Créer un utilisateur"
+msgstr ""
+
+#: admin.php:280 admin.php:297
+msgid "Identifiant :"
+msgstr ""
+
+#: admin.php:281 admin.php:298
+msgid "Mot de passe souhaité :"
+msgstr ""
+
+#: admin.php:282 admin.php:299
+msgid "Mot de passe souhaité (vérification):"
+msgstr ""
+
+#: admin.php:283
+msgid ""
+"Administrer : l'utilisateur pourra effectuer TOUTES les tâches "
+"d'administration (i.e. ajouter des utilisateurs, en supprimer, ajouter des "
+"bases, etc.)"
+msgstr ""
+
+#: admin.php:283
+msgid "Permissions"
+msgstr ""
+
+#: admin.php:283
+msgid "Administrer"
+msgstr ""
+
+#: admin.php:284 admin.php:300 export.php:233 links.php:111 modes.php:149
+#: modes.php:380 recherche.php:238 recherche.php:426 show.php:112 show.php:175
+#: update.php:899 update.php:976
+msgid "Valider"
+msgstr ""
+
+#: afficher_musicxml.php:15 update.php:782 virga.php:37 virga.php:318
+#: virga.php:411 virga.php:552
+msgid "La pièce n'existe pas"
+msgstr ""
+
+#: afficher_musicxml.php:25
+msgid "Pas de pièce specifiée"
+msgstr ""
+
+#: analyse.php:86 include/page.php:425
+msgid " -- Identifié en tant que"
+msgstr ""
+
+#: carroussel.php:12
+msgid "Synthese graphique des analyses sur une pièce"
+msgstr ""
+
+#: credits.php:15
+msgid "Crédits"
+msgstr ""
+
+#: credits.php:18
+msgid "Nous remercions"
+msgstr ""
+
+#: download.php:18
+msgid "Erreur vous devez spécifier une base"
+msgstr ""
+
+#: download.php:26
+msgid "Le fichier pdf n'existe pas"
+msgstr ""
+
+#: download.php:44
+msgid "Erreur: vous devez spécifier un fichier"
+msgstr ""
+
+#: download.php:65 image.php:83 image.php:108
+msgid "Soit vous n'avez pas les permissions nécessaires pour voir cette pièce"
+msgstr ""
+
+#: download.php:65 image.php:83 image.php:108
+msgid "Soit la pièce n'existe pas"
+msgstr ""
+
+#: download.php:85
+msgid "Spécifiez une base ou un recueil"
+msgstr ""
+
+#: download.php:176
+msgid "Téléchargement d'un fichier de traduction"
+msgstr ""
+
+#: download.php:180
+msgid "Choix de la langue"
+msgstr ""
+
+#: download.php:184 modes.php:366
+msgid "Anglais"
+msgstr ""
+
+#: download.php:185 modes.php:365
+msgid "Français"
+msgstr ""
+
+#: export.php:15
+msgid "PAS LES DROITS"
+msgstr ""
+
+#: export.php:25
+msgid "Export de la base de donnée"
+msgstr ""
+
+#: export.php:28
+msgid "Sélection de la base"
+msgstr ""
+
+#: export.php:49
+msgid "Sélection d'un recueil"
+msgstr ""
+
+#: export.php:206 recherche.php:132 recherche.php:165 recherche.php:317
+#: recherche.php:350 recherche.php:518
+msgid "Toutes"
+msgstr ""
+
+#: export.php:232 modes.php:149 modes.php:379 recherche.php:238
+#: recherche.php:426 show.php:112 show.php:174
+msgid "Réinitialiser"
+msgstr ""
+
+#: help.php:9 help.php:14 include/page.php:556 include/page.php:562
+msgid "Aide"
+msgstr ""
+
+#: image.php:21
+msgid "Erreur Type d'image"
+msgstr ""
+
+#: image.php:41
+msgid "Spécifiez la page"
+msgstr ""
+
+#: image.php:56
+msgid "Aucune image"
+msgstr ""
+
+#: image.php:117
+msgid "Aucune piece specifiée"
+msgstr ""
+
+#: index.php:8 links.php:10 liste_news.php:9 rediger_news.php:9
+msgid "Carnets de Notes"
+msgstr ""
+
+#: links.php:18 links.php:22
+msgid "Liens de la base"
+msgstr ""
+
+#: links.php:48 update.php:925 update.php:992
+msgid "La base demandée n'existe pas"
+msgstr ""
+
+#: links.php:65
+msgid "Aucune base existante"
+msgstr ""
+
+#: links.php:84 links.php:122
+msgid "Aucune base spécifiée"
+msgstr ""
+
+#: links.php:94 links.php:132
+msgid "La base n'existe pas"
+msgstr ""
+
+#: links.php:101 links.php:139 virga.php:530
+msgid "Problème de droit"
+msgstr ""
+
+#: links.php:102 links.php:140
+msgid "Vous n'avez pas les droits nécessaires"
+msgstr ""
+
+#: links.php:148
+msgid "Modification des liens"
+msgstr ""
+
+#: links.php:149
+msgid "Les liens ont été modifiés"
+msgstr ""
+
+#: login.php:8 include/page.php:200
+msgid "Connexion"
+msgstr ""
+
+#: login.php:44 login.php:45
+msgid "Mot de passe incorrect"
+msgstr ""
+
+#: login.php:56
+msgid "Identification requise"
+msgstr ""
+
+#: logout.php:8 logout.php:13 include/page.php:203 include/page.php:544
+msgid "Déconnexion"
+msgstr ""
+
+#: logout.php:14
+msgid "Déconnexion réussie"
+msgstr ""
+
+#: modes.php:18
+msgid "Ajout d'un mode"
+msgstr ""
+
+#: modes.php:26
+msgid "Nom du mode"
+msgstr ""
+
+#: modes.php:31
+msgid "Champ de la base"
+msgstr ""
+
+#: modes.php:34 show.php:275
+msgid "Nom de la base"
+msgstr ""
+
+#: modes.php:36 show.php:276 include/config.php:486 include/config.php:680
+msgid "Description"
+msgstr ""
+
+#: modes.php:38 show.php:277 include/config.php:496
+msgid "Références"
+msgstr ""
+
+#: modes.php:41
+msgid "Champ de chaque recueil"
+msgstr ""
+
+#: modes.php:43 modes.php:95 include/config.php:716 include/config.php:957
+msgid "Titre"
+msgstr ""
+
+#: modes.php:44 recherche.php:95 recherche.php:197 recherche.php:281
+#: recherche.php:385 include/config.php:725 include/config.php:966
+msgid "Titre uniforme"
+msgstr ""
+
+#: modes.php:45 include/config.php:734 include/config.php:975
+msgid "Abréviation"
+msgstr ""
+
+#: modes.php:53 modes.php:101 include/config.php:743 include/config.php:1207
+msgid "Image de la page de titre"
+msgstr ""
+
+#: modes.php:54 include/config.php:752 include/config.php:936
+#: include/config.php:996
+msgid "Image de la table des matières"
+msgstr ""
+
+#: modes.php:55 recherche.php:97 recherche.php:200 recherche.php:283
+#: recherche.php:388 include/config.php:763 include/config.php:1007
+msgid "Imprimeur"
+msgstr ""
+
+#: modes.php:60 include/config.php:773 include/config.php:1016
+msgid "Editeur"
+msgstr ""
+
+#: modes.php:61 recherche.php:101 recherche.php:205 recherche.php:288
+#: recherche.php:393 include/config.php:782 include/config.php:1025
+msgid "Adresse Bibliographique"
+msgstr ""
+
+#: modes.php:62 recherche.php:116 recherche.php:301 include/config.php:791
+#: include/config.php:1034 include/config.php:1691
+msgid "Auteur"
+msgstr ""
+
+#: modes.php:67 modes.php:125 recherche.php:108 recherche.php:210
+#: recherche.php:293 recherche.php:398 include/config.php:802
+#: include/config.php:1043 include/config.php:1307 include/config.php:1701
+msgid "Compositeur"
+msgstr ""
+
+#: modes.php:68 recherche.php:106 recherche.php:207 recherche.php:291
+#: recherche.php:395 include/config.php:812 include/config.php:1053
+msgid "Lieu"
+msgstr ""
+
+#: modes.php:69 include/config.php:824 include/config.php:1062
+msgid "Solmisation"
+msgstr ""
+
+#: modes.php:74 include/config.php:833 include/config.php:1071
+msgid "Timbres"
+msgstr ""
+
+#: modes.php:75 recherche.php:111 recherche.php:212 recherche.php:296
+#: recherche.php:400 include/config.php:842 include/config.php:1081
+msgid "Date d'impression"
+msgstr ""
+
+#: modes.php:76 include/config.php:851 include/config.php:1090
+msgid "Description matérielle"
+msgstr ""
+
+#: modes.php:80 include/config.php:860 include/config.php:1099
+msgid "Sources Bibliographiques"
+msgstr ""
+
+#: modes.php:81 include/config.php:869 include/config.php:1108
+msgid "Litterature secondaire"
+msgstr ""
+
+#: modes.php:82 modes.php:136 include/config.php:880 include/config.php:1118
+#: include/config.php:1402 include/config.php:1805
+msgid "Commentaire public"
+msgstr ""
+
+#: modes.php:85 modes.php:137 include/config.php:890 include/config.php:1127
+#: include/config.php:1411 include/config.php:1817
+msgid "Commentaire réservé"
+msgstr ""
+
+#: modes.php:86 include/config.php:899 include/config.php:1136
+msgid "Bibliothèque"
+msgstr ""
+
+#: modes.php:87 include/config.php:908 include/config.php:1145
+msgid "Cote"
+msgstr ""
+
+#: modes.php:92
+msgid "Champ de chaque pièce"
+msgstr ""
+
+#: modes.php:94 include/config.php:1170 include/config.php:1581
+msgid "Page"
+msgstr ""
+
+#: modes.php:96 include/config.php:1179 include/config.php:1601
+msgid "Pagination ancienne"
+msgstr ""
+
+#: modes.php:100 include/config.php:1198
+msgid "Fichier Finale"
+msgstr ""
+
+#: modes.php:102 include/config.php:1216
+msgid "Image fac simile"
+msgstr ""
+
+#: modes.php:108 include/config.php:1225 include/config.php:1611
+msgid "Mentions marginales"
+msgstr ""
+
+#: modes.php:109 include/config.php:1243
+msgid "Fichier MusicXML"
+msgstr ""
+
+#: modes.php:110 include/config.php:1253 include/config.php:1621
+msgid "Note finale"
+msgstr ""
+
+#: modes.php:113 recherche.php:217 recherche.php:405 recherche.php:503
+#: include/config.php:1262 include/config.php:1631
+msgid "Ambitus"
+msgstr ""
+
+#: modes.php:114 recherche.php:220 recherche.php:408 recherche.php:506
+#: include/config.php:1271 include/config.php:1641
+msgid "Armure"
+msgstr ""
+
+#: modes.php:115 include/config.php:1280 include/config.php:1651
+msgid "Clés"
+msgstr ""
+
+#: modes.php:118 include/config.php:1289 include/config.php:1661
+msgid "Nombre de parties"
+msgstr ""
+
+#: modes.php:119 include/config.php:1368 include/config.php:1671
+msgid "Texte additionnel"
+msgstr ""
+
+#: modes.php:120 include/config.php:1359 include/config.php:1681
+msgid "Concordances"
+msgstr ""
+
+#: modes.php:124 include/config.php:1327
+msgid "Auteur du texte"
+msgstr ""
+
+#: modes.php:126 include/config.php:1298
+msgid "Codage incipit"
+msgstr ""
+
+#: modes.php:131 include/config.php:1316 include/config.php:1711
+msgid "Timbre"
+msgstr ""
+
+#: modes.php:132 include/config.php:1377 include/config.php:1555
+#: include/config.php:1764 include/config.php:1777
+msgid "Source du texte"
+msgstr ""
+
+#: modes.php:133 include/config.php:1393 include/config.php:1727
+#: include/config.php:1736 include/config.php:1768
+msgid "Bibliographie spécifique du texte"
+msgstr ""
+
+#: modes.php:277
+msgid "Champs de la base"
+msgstr ""
+
+#: modes.php:278
+msgid "Champs du recueil"
+msgstr ""
+
+#: modes.php:279
+msgid "Champs de la pièce"
+msgstr ""
+
+#: modes.php:323
+msgid "Erreur de droit"
+msgstr ""
+
+#: modes.php:324
+msgid "Vous n'êtes pas autorisé à voir cette page"
+msgstr ""
+
+#: modes.php:337 modes.php:394
+msgid "Problème de droits"
+msgstr ""
+
+#: modes.php:347 modes.php:405
+msgid "Le mode que vous essayez d'éditer n'existe pas"
+msgstr ""
+
+#: modes.php:354
+msgid "Modifier le fichier de traduction"
+msgstr ""
+
+#: modes.php:357
+msgid "Traduction"
+msgstr ""
+
+#: modes.php:395
+msgid "Vous n'avez pas les droits nécessaires pour exécuter cette tâche"
+msgstr ""
+
+#: modes.php:415 modes.php:463
+msgid "Upload du fichier de traduction (po)"
+msgstr ""
+
+#: modes.php:420 modes.php:441 modes.php:471 modes.php:486 modes.php:515
+#: modes.php:530
+msgid "Fichier de traduction uploadé"
+msgstr ""
+
+#: modes.php:422 modes.php:443 modes.php:473 modes.php:488 modes.php:517
+#: modes.php:532
+msgid "Suppression de l'ancien fichier de traduction"
+msgstr ""
+
+#: modes.php:424 modes.php:475
+msgid "Déplacement du nouveau fichier de traduction (po)"
+msgstr ""
+
+#: modes.php:435 modes.php:508
+msgid "Upload du fichier de traduction (mo)"
+msgstr ""
+
+#: modes.php:445 modes.php:519
+msgid "Déplacement du nouveau fichier de traduction (mo)"
+msgstr ""
+
+#: modes.php:490
+msgid "Déplacement du nouveau fichier de traduction po"
+msgstr ""
+
+#: modes.php:498 modes.php:542
+msgid "Aucune langue spécifiée"
+msgstr ""
+
+#: modes.php:534
+msgid "Déplacement du nouveau fichier de traduction mo"
+msgstr ""
+
+#: modes.php:551
+msgid "Fichier original de traduction"
+msgstr ""
+
+#: recherche.php:49 recherche.php:603 include/page.php:198
+#: include/page.php:526
+msgid "Recherche"
+msgstr ""
+
+#: recherche.php:63 recherche.php:251 resultats.php:326
+msgid "Recherche titre/texte"
+msgstr ""
+
+#: recherche.php:68 recherche.php:256
+msgid "Votre recherche :"
+msgstr ""
+
+#: recherche.php:84 recherche.php:271
+msgid "Rechercher la chaîne dans"
+msgstr ""
+
+#: recherche.php:88 recherche.php:275
+msgid "Titre des Recueils"
+msgstr ""
+
+#: recherche.php:90 recherche.php:277
+msgid "Titre des Pièces"
+msgstr ""
+
+#: recherche.php:102
+msgid "Source_du_texte"
+msgstr ""
+
+#: recherche.php:113 recherche.php:298
+msgid "Textes"
+msgstr ""
+
+#: recherche.php:121 recherche.php:306
+msgid "Date du recueil: entre"
+msgstr ""
+
+#: recherche.php:122 recherche.php:307
+msgid "et"
+msgstr ""
+
+#: recherche.php:129 recherche.php:314 recherche.php:514
+msgid "Rechercher dans une base"
+msgstr ""
+
+#: recherche.php:161 recherche.php:346 recherche.php:547
+msgid "Rechercher dans un recueil"
+msgstr ""
+
+#: recherche.php:192 recherche.php:380
+msgid "Sortie"
+msgstr ""
+
+#: recherche.php:195 recherche.php:383
+msgid "Nom de la Base"
+msgstr ""
+
+#: recherche.php:202 recherche.php:286 recherche.php:390
+msgid "Commentaire"
+msgstr ""
+
+#: recherche.php:215 recherche.php:403
+msgid "Note Finale"
+msgstr ""
+
+#: recherche.php:222 recherche.php:410
+msgid "Clé"
+msgstr ""
+
+#: recherche.php:225 recherche.php:413
+msgid "Nombre de Parties"
+msgstr ""
+
+#: recherche.php:454 resultats.php:59
+msgid "Recherche mélodique"
+msgstr ""
+
+#: recherche.php:466
+msgid "Fa"
+msgstr ""
+
+#: recherche.php:467
+msgid "Do"
+msgstr ""
+
+#: recherche.php:468
+msgid "Sol"
+msgstr ""
+
+#: recherche.php:480
+msgid "Reconnaissance"
+msgstr ""
+
+#: recherche.php:481
+msgid "Absolue"
+msgstr ""
+
+#: recherche.php:482
+msgid "Relative"
+msgstr ""
+
+#: recherche.php:487
+msgid "Recherche uniquement au début des pièces"
+msgstr ""
+
+#: recherche.php:497
+msgid "Afficher les champs suivants"
+msgstr ""
+
+#: recherche.php:551
+msgid "Tous"
+msgstr ""
+
+#: recherche.php:603 include/analyse.php:1721 include/analyse.php:1768
+msgid "Effacer"
+msgstr ""
+
+#: rediger_news.php:60
+msgid "non autorisé"
+msgstr ""
+
+#: resultats.php:11
+msgid "Résultats"
+msgstr ""
+
+#: resultats.php:64
+msgid "Erreur , aucune mélodie entrée"
+msgstr ""
+
+#: resultats.php:142
+msgid "La recherche n'a retourné aucun résultat"
+msgstr ""
+
+#: resultats.php:335
+msgid "Vous recherchez la chaîne"
+msgstr ""
+
+#: resultats.php:351
+msgid "Veuillez choisir au moins une option dans le champ"
+msgstr ""
+
+#: resultats.php:351
+msgid "Recherche dans"
+msgstr ""
+
+#: resultats.php:510
+msgid "Aucun resultat"
+msgstr ""
+
+#: resultats.php:637
+msgid "Rechercher dans ces résultats"
+msgstr ""
+
+#: show.php:24
+msgid "Consultation de la base"
+msgstr ""
+
+#: show.php:51 update.php:721
+msgid "Autre"
+msgstr ""
+
+#: show.php:84
+msgid "Créer un MP3 (plus long)"
+msgstr ""
+
+#: show.php:89 include/config.php:1486
+msgid "Ronde"
+msgstr ""
+
+#: show.php:90 include/config.php:1487
+msgid "Blanche"
+msgstr ""
+
+#: show.php:91 include/config.php:1488
+msgid "Blanche pointée"
+msgstr ""
+
+#: show.php:92 include/config.php:1489
+msgid "Noire"
+msgstr ""
+
+#: show.php:93 include/config.php:1490
+msgid "Croche"
+msgstr ""
+
+#: show.php:94 include/config.php:1491
+msgid "Double croche"
+msgstr ""
+
+#: show.php:160 update.php:185
+msgid "Base sélectionnée"
+msgstr ""
+
+#: show.php:206
+msgid "Veuillez entrer les informations sur la base"
+msgstr ""
+
+#: show.php:209 update.php:945
+msgid ""
+"Sélectionnez ici le propriétaire de la base.Si vous n'avez pas encore créé "
+"l'utilisateur dont vous souhaitez qu'il soit le propriétaire de cette base, "
+"merci de le faire auparavant en vous rendant dans l'administration."
+msgstr ""
+
+#: show.php:209
+msgid "Propriétaire de la base"
+msgstr ""
+
+#: show.php:252
+msgid "Consulter une base"
+msgstr ""
+
+#: show.php:278 update.php:964
+msgid "Guide Pdf"
+msgstr ""
+
+#: show.php:279 show.php:303 show.php:372 show.php:651 show.php:803
+#: show.php:823 show.php:839 show.php:860 show.php:937 show.php:1075
+msgid "Editer"
+msgstr ""
+
+#: show.php:280 show.php:306 show.php:803 show.php:823 show.php:839
+#: show.php:860 show.php:1059 show.php:1078 users_groups.php:68
+#: users_groups.php:149 users_groups.php:234
+msgid "Supprimer"
+msgstr ""
+
+#: show.php:372 show.php:376 show.php:800 show.php:837
+msgid "Pièce"
+msgstr ""
+
+#: show.php:459 show.php:635 include/page.php:371 include/page.php:376
+msgid "Retour"
+msgstr ""
+
+#: show.php:493 include/analyse.php:895 include/analyse.php:1519
+msgid "Précédent"
+msgstr ""
+
+#: show.php:514 include/analyse.php:898 include/analyse.php:1521
+msgid "Suivant"
+msgstr ""
+
+#: show.php:549
+msgid "Player"
+msgstr ""
+
+#: show.php:576 show.php:588
+msgid "Voir l'image en plein écran"
+msgstr ""
+
+#: show.php:585
+msgid "Image Incipit"
+msgstr ""
+
+#: show.php:651 show.php:655 update.php:816 include/config.php:1448
+msgid "Recueil"
+msgstr ""
+
+#: show.php:673 include/config.php:1157
+msgid "Nom de l'auteur de la fiche"
+msgstr ""
+
+#: show.php:780
+msgid "Aucune pièce dans ce recueil ."
+msgstr ""
+
+#: show.php:786
+msgid "Affichage des pièces du recueil"
+msgstr ""
+
+#: show.php:937 show.php:941 virga.php:435
+msgid "Base"
+msgstr ""
+
+#: show.php:1043
+msgid "Affichage des recueils"
+msgstr ""
+
+#: testbac.php:39
+msgid "test traduction"
+msgstr ""
+
+#: update.php:12
+msgid "Modification"
+msgstr ""
+
+#: update.php:53 update.php:165
+msgid "Modification d'un recueil"
+msgstr ""
+
+#: update.php:57
+msgid "Vous n'avez pas les permissions nécessaires"
+msgstr ""
+
+#: update.php:86
+msgid "Erreur lors de l'upload de l'image du titre du recueil"
+msgstr ""
+
+#: update.php:105
+msgid "Erreur lors de l'upload de l'image de la table des matières"
+msgstr ""
+
+#: update.php:155 update.php:1027
+msgid "Modification effectuée avec succès"
+msgstr ""
+
+#: update.php:168
+msgid "Vous n'avez pas les permissions nécessaires pour modifier cette base"
+msgstr ""
+
+#: update.php:169
+msgid "Retour à la consultation"
+msgstr ""
+
+#: update.php:282 update.php:781
+msgid "Modification d'une pièce"
+msgstr ""
+
+#: update.php:288 update.php:796
+msgid "Vous n'êtes pas autorisé à modifier cette pièce"
+msgstr ""
+
+#: update.php:299
+msgid "Veuillez renseigner tous les champs obligatoires"
+msgstr ""
+
+#: update.php:666
+msgid "Modification exécutée avec succès"
+msgstr ""
+
+#: update.php:678
+msgid "Aucun recueil enregistré"
+msgstr ""
+
+#: update.php:793
+msgid "Modification de la pièce"
+msgstr ""
+
+#: update.php:864 update.php:882
+msgid "Valide"
+msgstr ""
+
+#: update.php:865 update.php:884 update.php:967 update.php:1089
+#: update.php:1145 update.php:1165 update.php:1185 update.php:1439
+#: update.php:1454 update.php:1469 update.php:1484 include/config.php:924
+#: include/config.php:939 include/config.php:1434 include/config.php:1462
+#: include/config.php:1479 include/config.php:1505 include/config.php:1520
+msgid "Oui"
+msgstr ""
+
+#: update.php:868
+msgid "Date de validation"
+msgstr ""
+
+#: update.php:872
+msgid "Auteur de la validation"
+msgstr ""
+
+#: update.php:885 update.php:968 update.php:1089 update.php:1145
+#: update.php:1165 update.php:1185 update.php:1443 update.php:1458
+#: update.php:1473 update.php:1488 include/config.php:925
+#: include/config.php:940 include/config.php:1435 include/config.php:1463
+#: include/config.php:1480 include/config.php:1506 include/config.php:1521
+msgid "Non"
+msgstr ""
+
+#: update.php:920 update.php:988
+msgid "Modification d'une base"
+msgstr ""
+
+#: update.php:1042
+msgid "Permissions correctement mises à jour"
+msgstr ""
+
+#: update.php:1043
+msgid "L'utilisateur est désormais administrateur."
+msgstr ""
+
+#: update.php:1043
+msgid "L'utilisateur n'est plus administrateur."
+msgstr ""
+
+#: update.php:1049
+msgid "Suppression d'un utilisateur"
+msgstr ""
+
+#: update.php:1052
+msgid "Vous ne pouvez pas vous supprimer vous même."
+msgstr ""
+
+#: update.php:1058
+msgid "Vous n'avez pas les droits nécessaires pour supprimer un utilisateur"
+msgstr ""
+
+#: update.php:1075
+msgid "L'utilisateur"
+msgstr ""
+
+#: update.php:1075
+msgid " a bien été enlevé de la base"
+msgstr ""
+
+#: update.php:1087
+msgid "Vous êtes sur le point de supprimer l'utilisateur"
+msgstr ""
+
+#: update.php:1088 update.php:1144 update.php:1164
+msgid "Etes vous sûr de vouloir continuer?"
+msgstr ""
+
+#: update.php:1099
+msgid "Suppression d'une base"
+msgstr ""
+
+#: update.php:1100 update.php:1136
+msgid "La base que vous voulez supprimer n'existe pas"
+msgstr ""
+
+#: update.php:1108
+msgid "Suppression de la base"
+msgstr ""
+
+#: update.php:1111
+msgid "Vous n'avez pas les droits nécessaires pour supprimer une base"
+msgstr ""
+
+#: update.php:1125
+msgid "La base"
+msgstr ""
+
+#: update.php:1125
+msgid " a été supprimée"
+msgstr ""
+
+#: update.php:1143
+msgid "Vous êtes sur le point de supprimer la base"
+msgstr ""
+
+#: update.php:1155 update.php:1202 update.php:1243
+msgid "Le recueil que vous voulez supprimer n'existe pas"
+msgstr ""
+
+#: update.php:1163
+msgid "Vous êtes sur le point de supprimer le recueil"
+msgstr ""
+
+#: update.php:1175 update.php:1279 update.php:1385
+msgid "La pièce que vous voulez supprimer n'existe pas"
+msgstr ""
+
+#: update.php:1183
+msgid "Vous êtes sur le point de supprimer la pièce"
+msgstr ""
+
+#: update.php:1184
+msgid "Etes vous sur de vouloir continuer?"
+msgstr ""
+
+#: update.php:1202 update.php:1242
+msgid "Suppression d'un recueil"
+msgstr ""
+
+#: update.php:1213 update.php:1226 update.php:1251 update.php:1254
+msgid "Suppression du recueil"
+msgstr ""
+
+#: update.php:1213 update.php:1254
+msgid "Vous n'avez pas les droits nécessaires pour supprimer ce recueil"
+msgstr ""
+
+#: update.php:1226
+msgid "Le recueil"
+msgstr ""
+
+#: update.php:1226
+msgid " a été supprimé"
+msgstr ""
+
+#: update.php:1279 update.php:1384
+msgid "Suppression d'une pièce"
+msgstr ""
+
+#: update.php:1288 update.php:1319 update.php:1363 update.php:1403
+msgid "Suppression de la pièce"
+msgstr ""
+
+#: update.php:1288 update.php:1396
+msgid "Le recueil que vous avez spécifié n'existe pas"
+msgstr ""
+
+#: update.php:1319 update.php:1363
+msgid "La pièce"
+msgstr ""
+
+#: update.php:1319
+msgid " a été supprimée du recueil"
+msgstr ""
+
+#: update.php:1319
+msgid " mais elle est encore présente dans la base"
+msgstr ""
+
+#: update.php:1363
+msgid " a été supprimée de la base"
+msgstr ""
+
+#: update.php:1403
+msgid " du recueil"
+msgstr ""
+
+#: update.php:1406
+msgid "Vous n'avez pas les droits nécessaires pour supprimer cette pièce"
+msgstr ""
+
+#: users_groups.php:9
+msgid "Utilisateurs et groupes"
+msgstr ""
+
+#: users_groups.php:14
+msgid "Affichage des groupes existants"
+msgstr ""
+
+#: users_groups.php:21
+msgid "Aucun groupe existant"
+msgstr ""
+
+#: users_groups.php:39
+msgid "Affichage du groupe"
+msgstr ""
+
+#: users_groups.php:122
+msgid "Affichage de tous les utilisateurs"
+msgstr ""
+
+#: users_groups.php:140
+msgid "Pseudo"
+msgstr ""
+
+#: users_groups.php:150 users_groups.php:235
+msgid "Changer les permissions"
+msgstr ""
+
+#: users_groups.php:208
+msgid "Affichage de l'utilisateur"
+msgstr ""
+
+#: virga.php:13
+msgid "Analyse de la langue française du XVIième siècle"
+msgstr ""
+
+#: virga.php:29
+msgid "Aucune pièce sélectionnée"
+msgstr ""
+
+#: virga.php:232
+msgid "Edition des accents"
+msgstr ""
+
+#: virga.php:302 virga.php:398
+msgid "Le texte a été modifié"
+msgstr ""
+
+#: virga.php:329
+msgid "Edition des accents de la musique"
+msgstr ""
+
+#: virga.php:438
+msgid "Musique"
+msgstr ""
+
+#: virga.php:459
+msgid "Données numériques"
+msgstr ""
+
+#: virga.php:531
+msgid "Non authorisé"
+msgstr ""
+
+#: virga.php:539
+msgid "Aucune pièce spécifiée"
+msgstr ""
+
+#: virga.php:561
+msgid "La pièce sélectionnée n'est pas un psaume"
+msgstr ""
+
+#: virga.php:613
+msgid "Comparaison linguistique"
+msgstr ""
+
+#: virga.php:616
+msgid "Accent de la musique"
+msgstr ""
+
+#: virga.php:616 virga.php:617
+msgid "Editer les accents"
+msgstr ""
+
+#: virga.php:616
+msgid "Editer les accents de la musique"
+msgstr ""
+
+#: virga.php:617
+msgid "Accent de la base"
+msgstr ""
+
+#: virga.php:644
+msgid "Comparaison linguistique "
+msgstr ""
+
+#: virga_statistiques.php:10
+msgid "Statistiques sur virga"
+msgstr ""
+
+#: include/analyse.php:907 include/analyse.php:915
+msgid "Histogramme"
+msgstr ""
+
+#: include/analyse.php:1721 include/analyse.php:1768
+msgid "Analyse"
+msgstr ""
+
+#: include/check_serv_dev.php:12
+msgid ""
+"Vous consultez une page du serveur de consultation, cette page vous est "
+"inaccessible. "
+msgstr ""
+
+#: include/config.php:97
+msgid "base"
+msgstr ""
+
+#: include/config.php:102
+msgid "recueil"
+msgstr ""
+
+#: include/config.php:107
+msgid "pièce"
+msgstr ""
+
+#: include/config.php:477 include/config.php:670
+msgid "Nom"
+msgstr ""
+
+#: include/config.php:536
+msgid "Couleur de fond"
+msgstr ""
+
+#: include/config.php:553 include/config.php:649
+msgid "Banner"
+msgstr ""
+
+#: include/config.php:604 include/config.php:652
+msgid "Nouveau banner"
+msgstr ""
+
+#: include/config.php:605
+msgid "Par défaut"
+msgstr ""
+
+#: include/config.php:619 include/config.php:701
+msgid "Mode"
+msgstr ""
+
+#: include/config.php:653
+msgid "Garder le banner"
+msgstr ""
+
+#: include/config.php:691
+msgid "References"
+msgstr ""
+
+#: include/config.php:921 include/config.php:985
+msgid "Titre en image"
+msgstr ""
+
+#: include/config.php:1179 include/config.php:1601
+msgid "Signature,pagination alternative"
+msgstr ""
+
+#: include/config.php:1188 include/config.php:1591
+msgid "Titre de la pièce (ou incipit)"
+msgstr ""
+
+#: include/config.php:1198 include/config.php:1459
+msgid "Stocker le fichier d'édition musicale (Finale,Sibelius ...)"
+msgstr ""
+
+#: include/config.php:1207
+msgid "Image de la partition moderne"
+msgstr ""
+
+#: include/config.php:1238
+msgid "Vous avez un fichier MusicXML"
+msgstr ""
+
+#: include/config.php:1239
+msgid "Pas de MusicXML"
+msgstr ""
+
+#: include/config.php:1262
+msgid "Ambitus ou tessiture"
+msgstr ""
+
+#: include/config.php:1420
+msgid "Commentaire révision"
+msgstr ""
+
+#: include/config.php:1432 include/config.php:1843
+msgid "Psaume"
+msgstr ""
+
+#: include/config.php:1459
+msgid "Envoyer un nouveau Fichier Finale"
+msgstr ""
+
+#: include/config.php:1476
+msgid "MusicXML"
+msgstr ""
+
+#: include/config.php:1476
+msgid "Envoyer un nouveau Fichier MusicXML"
+msgstr ""
+
+#: include/config.php:1502
+msgid "Reupload de l'image de la partition moderne"
+msgstr ""
+
+#: include/config.php:1502
+msgid "Envoyer une nouvelle image de la page de titre"
+msgstr ""
+
+#: include/config.php:1517
+msgid "Reupload de l'image fac simile"
+msgstr ""
+
+#: include/config.php:1517
+msgid "Renvoyer une image fac simile"
+msgstr ""
+
+#: include/config.php:1728 include/config.php:1765 include/config.php:1769
+msgid "Aucune (champ impossible à remplir sans musicxml)"
+msgstr ""
+
+#: include/config.php:1830
+msgid "Commentaire de la révision"
+msgstr ""
+
+#: include/mysql.php:34
+msgid "Impossible de se connecter à la base MySQL :"
+msgstr ""
+
+#: include/mysql.php:37
+msgid "Impossible de sélectionner la base de donées :"
+msgstr ""
+
+#: include/mysql.php:100
+msgid "Erreur dans une requête MySql"
+msgstr ""
+
+#: include/page.php:177
+msgid "Titre du recueil :"
+msgstr ""
+
+#: include/page.php:182
+msgid "Titre de la pièce :"
+msgstr ""
+
+#: include/page.php:187
+msgid "Appartient à la base :"
+msgstr ""
+
+#: include/page.php:197
+msgid "Page Principale"
+msgstr ""
+
+#: include/page.php:199 include/page.php:527
+msgid "Consultation"
+msgstr ""
+
+#: include/page.php:446
+msgid "Aller au site score-catcher.org"
+msgstr ""
+
+#: include/page.php:525
+msgid "Page principale"
+msgstr ""
+
+#: include/page.php:528 include/page.php:529
+msgid "Forum"
+msgstr ""
+
+#: include/page.php:550
+msgid "Login"
+msgstr ""
+
+#: include/page.php:567
+msgid "Liens"
+msgstr ""
+
+#: include/page.php:586
+msgid "Reproduction non autorisée. Tous droits réservés."
+msgstr ""
+
+#: include/page.php:593
+msgid "Temps d'execution"
+msgstr ""
+
+#: include/page.php:593
+msgid "Requêtes"
+msgstr ""
+
+#: include/upload.php:26
+msgid "Aucun fichier selectionné"
+msgstr ""
+
+#: include/upload.php:32 include/upload.php:54
+msgid "Erreur lors du transfert du fichier"
+msgstr ""
+
+#: include/upload.php:43
+msgid "Le fichier n'a pas une bonne extension"
+msgstr ""
+
+#: include/virga_texte.php:199
+msgid "Marquage des hiatus"
+msgstr ""

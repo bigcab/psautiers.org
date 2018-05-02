@@ -1,0 +1,5 @@
+#!/bin/sh
+svn update
+gedit `find . | sed -e 's/^.*svn.*$//g'| sed -e 's/^.*~.*$//g'| sed -e 's/^.*ttf.*$//g' | grep php ` &
+
+

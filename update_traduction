@@ -1,0 +1,11 @@
+#!/bin/sh
+
+
+#update d'une traduction par msgmerge pas encore mis en place
+xgettext -L php --from-code UTF-8 -o locale/traductions/orig.po   *.php include/*.php 
+
+
+
+svn ci -m ""
+
+

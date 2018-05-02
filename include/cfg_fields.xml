@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document [ 
+  <!ATTLIST mode
+    id ID #IMPLIED 
+  > 
+  ]> 
+<document>
+<mode id="default" >
+	<base>
+		<field name="nom_base"/>
+		<field name="description"/>
+		<field name="references"/>
+		<field name="body_background_color"/>
+		<field name="banner"/>
+		<field name="mode"/>
+	</base>
+	
+	<recueil>
+		<field name="titre"/>
+		<field name="titre_uniforme"/>
+		<field name="abreviation"/>
+		<field name="image_titre_recueil_jpg"/>
+		<field name="image_table_matieres"/>
+		<field name="imprimeur"/>
+		<field name="editeur"/>
+		<field name="adresse_biblio"/>
+		<field name="auteur"/>
+		<field name="compositeur"/>
+		<field name="lieu"/>
+		<field name="solmisation"/>
+		<field name="timbre"/>
+		<field name="date_impression"/>
+		<field name="description_materielle"/>
+		<field name="sources_bibliographiques"/>
+		<field name="litterature_secondaire"/>
+		<field name="comment_public"/>
+		<field name="comment_reserve"/>
+		<field name="bibliotheque"/>
+		<field name="cote"/>
+	</recueil>
+	
+	<piece>
+		<field name="page"/>
+		<field name="titre_piece"/>
+		<field name="pagination_ancienne"/>
+		<field name="fichier_finale"/>
+		<field name="image_jpg"/>
+		<field name="incipit_jpg"/>
+		<field name="rubrique"/>
+		<field name="musicxml"/>
+		<field name="note_finale"/>
+		<field name="ambitus"/>
+		<field name="armure"/>
+		<field name="cles"/>
+		<field name="nombre_parties"/>
+		<field name="texte_additionnel"/>
+		<field name="concordances"/>
+		<field name="auteur"/>
+		<field name="compositeur"/>
+		<field name="codage_incipit"/>
+		<field name="timbre"/>
+		<field name="groupes_textes"/>
+		<field name="biblio_texte"/>
+		<field name="comment_public"/>
+		<field name="comment_reserve"/>
+		<field name="psaume"/>
+	</piece>
+</mode>
+<mode id="special" >
+	<base>
+		<field name="nom_base"/>
+		<field name="description"/>
+	</base>
+	
+	<recueil>
+		<field name="titre"/>
+		<field name="titre_uniforme"/>
+		<field name="abreviation"/>
+		<field name="image_titre_recueil_jpg"/>
+		<field name="image_table_matieres"/>
+		<field name="imprimeur"/>
+		<field name="editeur"/>
+		<field name="adresse_biblio"/>
+		<field name="auteur"/>
+		<field name="compositeur"/>
+		<field name="lieu"/>
+		<field name="solmisation"/>
+		<field name="timbre"/>
+		<field name="date_impression"/>
+		<field name="description_materielle"/>
+		<field name="sources_bibliographiques"/>
+		<field name="litterature_secondaire"/>
+		<field name="comment_public"/>
+		<field name="comment_reserve"/>
+		<field name="bibliotheque"/>
+
+	</recueil>
+	
+	<piece>
+		<field name="page"/>
+		<field name="titre_piece"/>
+		<field name="pagination_ancienne"/>
+		<field name="fichier_finale"/>
+		<field name="image_jpg"/>
+		<field name="incipit_jpg"/>
+		<field name="rubrique"/>
+		<field name="musicxml"/>
+		<field name="note_finale"/>
+		<field name="ambitus"/>
+		<field name="armure"/>
+		<field name="cles"/>
+		<field name="nombre_parties"/>
+		<field name="texte_additionnel"/>
+		<field name="concordances"/>
+
+		<field name="compositeur"/>
+		<field name="codage_incipit"/>
+		<field name="timbre"/>
+		<field name="groupes_textes"/>
+		<field name="biblio_texte"/>
+		<field name="comment_public"/>
+		<field name="comment_reserve"/>
+	</piece>
+</mode>
+</document>

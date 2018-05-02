@@ -1,0 +1,24 @@
+
+BASES
+
+-id_base : incr,primary
+-nom_base
+-description
+-references
+
+RECUEILS
+-id_recueil : incr , primary
+-id_base
+-titre
+-titre_uniforme
+-abreviation
+-image_titre_jpg : si illuminures
+-imprimeur
+-lieu
+
+PIECES
+-id_piece : incr, primary
+-id_base
+-id_recueil
+-
+-

@@ -1,0 +1,174 @@
+
+body
+{
+background-color: rgb(204,220,255);
+margin: 0;
+text-align: center;
+font-family: Verdana;
+font-size: 13;
+}
+#contenu
+{
+background-color: rgb(198,216,255);
+width: 900px;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+}
+#texte
+{
+background-color: rgb(251,251,251);
+padding: 20px;
+}
+#footer
+{
+text-align: center;
+font-size: 11;
+}
+hr
+{
+color: rgb(192,192,192);
+background-color: rgb(192,192,192);
+height: 1px;
+border: 0;
+}
+#menu
+{
+margin-bottom: 10px;
+text-align: center;
+}
+#menu a, a:visited
+{
+color: rgb(5,82,224);
+text-decoration: none;
+margin: 5px;
+}
+#menu a:hover
+{
+color: rgb(0,128,192);
+text-decoration: underline;
+}
+a, a:visited
+{
+color: rgb(5,82,224);
+text-decoration: none;
+}
+a:hover
+{
+color: rgb(0,128,192);
+text-decoration: underline;
+}
+#bas
+{
+width: 900;
+height: 47;
+background: rgb(204,220,255) url(./images/design/bas.png);
+margin-bottom: 30px;
+}
+h1
+{
+font-size: 15px;
+color: rgb(79,137,208);
+background: url(./images/design/h1.png);
+background-repeat: no-repeat;
+padding-left: 25px;
+margin-top: 20px;
+}
+h2
+{
+font-size: 12px;
+color: rgb(79,137,208);
+background: url(./images/design/h2.png);
+background-repeat: no-repeat;
+padding-left: 25px;
+margin-top: 20px;
+margin-left: 50px;
+}
+img
+{
+border: 0;
+}
+#haut
+{
+width: 900;
+height: 47;
+background: rgb(204,220,255) url(./images/design/haut.png);
+margin-top: 15px;
+background-repeat: no-repeat;
+}
+#ariane
+{
+font-size: 11;
+margin-top: 10px;
+}
+#boite
+{
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: rgb(245,245,255);
+padding: 10px;
+border: 1px solid rgb(200,200,200);
+}
+table /* Tableau */
+{
+width: 100%;
+font-size: 13;
+text-align: left;
+margin: 0;
+padding: 10;
+border-collapse: inherit;
+}
+tr /* Ligne */
+{
+
+}
+td /* Colonne */
+{
+padding: 5;
+}
+th /* En tête du tableau */
+{
+padding: 7;
+font-size: 12;
+background-color: rgb(224,234,252);
+border: 0;
+font-weight: normal;
+}
+table a
+{
+color: rgb(74,131,234);
+}
+#tableau_haut
+{
+width: 50%;
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: rgb(245,245,255);
+padding: 10px;
+border: 1px solid rgb(200,200,200);
+}
+.tableau_info
+{
+width: 30%;
+position: absolute;
+background-color: rgb(245,245,255);
+padding: 5px;
+border: 1px solid rgb(200,200,200);
+}
+
+
+
+
+.table_no_show {display: none;} 
+.table_show {display: table-row;} 
+
+.box_table_js_ouvert
+{
+        display: table;
+}
+
+.box_table_js_ferme
+{
+        display: none;
+}
+

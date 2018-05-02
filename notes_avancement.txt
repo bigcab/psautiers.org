@@ -1,0 +1,717 @@
+
+
+
+fait le 21/05/2013
+
+joyeux anniv viet
+
+1) réparation locale du fonctionnement des fichiers traductions
+le dossier en/ marche
+
+2)ajout sur la liste des hiatus : ouez
+
+3) patch script/script_update_ouez_hiatus_db.php pour corriger le problème
+4) affichage des statistiques sur les hiatus
+à faire: 
+
+5) Reste à tester les pages de virga
+    + revoir le design peut-être
+   idée de navigation pratique
+
+
+-----------------------------------------------------------------------------------
+
+
+--------------------------------------------------------
+fait le 26/04/2013
+
+correction d'un gros bug pour les upload lilypond pour avoir une musique
+lilypond.php compatible avec la version GNU LilyPond 2.12.3
+
+
+
+---------------------------------------------------------
+
+1) rajout des hiatus_string et hiatus_form dans la base de donnée, avec script d'update
+2) py/ ajout des infos sur les hiatus_string hiatus_form
+
+---------------------------------------------------------------------
+
+fait le 11/04/2013
+
+1)correction de bugs concernant la syllabation ...
+
+
+reste à faire : apparition des infos sur les hiatus 
+update des champs pour le hiatus_string
+
+
+-------------------------------------------------------------------------
+
+
+>>>>>>> .r98
+fait le 01/03/2013  
+
+1) reprogrammation des hiatus, dans la base sql rajout du champ hiatus_form qui donne la précision réelle : abolie hiatus_form => i/e
+ou Dieu hiatus_form="i/eu"
+rajout du champ hiatus_string = "ieu"
+
+
+-------------------------------------------------------------
+
+fait le 28/02/2013
+
+
+
+1) correction de quelques bugs concernant les hiatus (cestuylà)
+2) apparition des statistiques sur les h et ent
+
+
+
+à faire : 
+1) faire apparaitre les hiatus, ent et h aspiré ou non.
+
+-------------------------------------------------------------
+fait le 23/02/2013
+
+fait : 
+1) optimisation de la page virga.php , plus que 18 requêtes sql
+2) optimisation de la page de statistiques pour virga.
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------
+fait le 04/12/2012
+
+1) accentuation par rapport à la seconde note pour le début de vers
+2) bouton retour après les statistiques 
+3)Correlation longueur accent 
+taux de corrélation sur la pièce total et uniquement sur les polysyllabes
+4) 
+-----------------------------------------------------------------------------------
+169
+170
+172
+173
+174
+247
+254
+
+à faire: 
+
+
+
+nombre de syllabes sur le psaume. 
+sur tout le recueil 
+ 
+------------------------------------------------------------------------------------------------
+fait le 30/12/2012
+
+
+1)notes de version sur les imports export
+2) correction du bug sur la syllabation (abonbondamment)
+    les faire corriger sur la pièces qui présentent des problèmes. (script.php et les remodifier) 
+3) correction du bug du commentaire fantome . 
+4) la syllabation ne tient plus compte des ponctuations (heureusement)
+
+
+à faire :
+
+1)rechercher les possibles problèmes de syllabation !!!!!!
+quelques questions concernant la procédure de syllabation et de prise en compte des accents.
+
+
+
+que faire si la syllabe est jouée sur plusieurs notes  : est ce que l'on compte la durée totale de la syllabe ou la durée de la première note?
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+fait le 24/12/2012
+
+
+1) sur virga_statistiques.php : recherche de motif + mot possible
+
+----------------------------------------------------------------------------------------------------------------------
+fait le 23/11/2012
+
+
+modification principale sur import_export_includes_ppiv.py
+fait : 1)import ,export: mots db etc ...
+2) correction des bugs concernant la ponctuation et l'enregistrement dans la base de donnée.
+3) correction des bugs dans la lecture des xml et de l'enregistrement dans la base donnée (correction des boucles infinies)
+à faire  :
+
+
+5) apparaitre les statistiques 
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------
+fait le 14/10/2012
+
+
+
+fait : 	1)add.php : import des mots nouveaux dans la database
+		2) update.php : enlever mots,updater mots
+		3) - faire un script pour entrer dans la base les données syntaxiques de chaque psaume => script/script.php
+-------------------------------------------------------------------------------
+fait le 12/10/2012
+
+
+mots.php: fontion virga ajout des champ id_piece syllabe_n vers_n dans les db
+
+à faire: import des infos + test+ statistiques 
+
+
+---------------------------------------------------------
+
+fait le 11/05/2012
+
+rev 4169 : correction de la plupart des erreurs dans les logs
+rev 4126 : correction du gros bug de permissions
+--------------------------------------------------
+
+correction du code
+	add.php
+	admin.php
+	afficher_musicxml.php
+	afficher_partition.php
+	affich_histogram.php
+	analyse.php
+	bugs.php
+	carroussel.php
+	clavier.php
+	credits.php
+	download.php
+	export.php
+	fast_analyse.php
+	fast_histogram.php
+	groups.php
+	help.php
+	image.php
+	import.php
+	index.php => ok
+	links.php
+	liste_news.php
+	list.php
+	login.php => ok
+	logout.php
+	modes.php
+	mod.php
+	recherche.php => ok
+	rediger_news.php
+	resultats.php
+	show.php => ok
+	testbac2.php
+	testbac.php
+	testgd.php
+	update.php
+	users_groups.php
+	users.php
+	virga.php
+
+
+dossier include: 
+
+	analyse.php
+	auth.php
+	bbcode.php
+	check.php
+	check_serv_dev.php
+	clavier.php
+	config.php
+	draw_music_xml.php
+	draw.php
+	export.php
+	global.php
+	histogram.php
+	import.php
+	infos_db.php
+	lilypond.php
+	log.php
+	math.php
+	message_box.php
+	mots.php
+	mysql.php
+	note.php
+	page2.php
+	page2.php~
+	page.php
+	texte.php
+	upload.php
+	virga_texte.php
+	xml.php
+
+
+
+
+
+--------------------------------------------------------------------------------------
+fait le 15/04/2012
+
+
+reste à faire 
+    1) dropbox pour les diagrammes + calculs en tenant compte des éléments de la dropbox
+    2) travail sur les octaves 
+    3) statistiques 
+    4) fonction pour importer les données en masse du serveur de developpement au serveur de consultation
+    5) on nettoie le js et on les mets dans les bon répertoires ? 
+
+    
+    
+rev 4026:
+    1) fonction d'analyse moins couteuse programmées directement dans /analyse.php + nettoyage du js sur ces fichiers
+
+
+-----------------------------------------------------------------------------------------------
+
+fait le 14/04/2012
+
+
+
+rev 4025:
+    1) server up and running, python perfect ...
+    
+
+rev 4007:
+    1) modif import_export_includes pour le banner
+
+rev 4006 :
+    1) modif page show.php: aucune base existante + href 
+    2) ajout des fichiers py
+    
+
+----------------------------------------------------------------------------------------
+fait le 06/04/2012
+
+
+
+rev 3987 : 
+
+    en cours: nettoyage du javascript et sécurisation du code 
+        page : show.php --> ok
+                recherche.php --> ok
+                update.php --> ok
+                resulats.php --> ok
+                
+                    
+-----------------------------------------------------------------------------------------------
+
+    
+fait le 21/03/2012  
+rev 3982: 
+        1) méthode graphiques / utilitaires pour classer les diagrammes etc.. (graphiques pourcentage customizable pour l'utilisateur)
+            fait pour les histos presque bon    
+
+-----------------------------------------------------------------------------------------------------------------
+fait le 19/03/2012 : 
+
+
+    
+rev 3967 : 
+        1) clavier reprogrammé fonctionnel avec la sécurisation du code
+       
+
+
+
+-----------------------------------------------------------------------------------------------
+fait le 16/03/2012  
+
+
+
+    remarques : pour le serveur de consultation : toutes les autorisations seront en mode read => 
+
+rev 3966 : 
+    1) serveur de dev/ serveur consultation
+    2) casse tete pour rigaux :  enlever les lignes espaces etc ... cadeaux pour rigaux
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+fait le 20/02/2012
+
+à faire : 
+    1) travail sur les octaves
+    2) statistiques
+rev 3965 : 
+    1) plus de silence dans les calculs 
+    2) ajout du fichier include/math.php pour plus de clarté
+    3) direct parsing , donner les statistiques directement après upload
+rev 3967 : correction du copyright
+rev 3969: correction des pbs d'antislash
+-----------------------------------------------------------------------------------------------------------------
+
+fait le 26/12/2011
+
+rev 3962 : les hiatus sont enregistrés dans la base de donnée lors de la modification, et dès l'ouverture de la page virga.php
+rev 3963 : les dernieres erreurs sont enlevées,validation de la page virga entière...
+
+----------------------------------------------------------------------------------------------------------------------
+fait le 23/12/2011
+
+
+rev 3960 : recodage de la fonction hiatus_mot plus performante pour repérer les exceptions et les voyelles doubles exemple 'en' 
+--------------------------------------------------------------------------------------------------------------------------
+fait le 23/12/2011
+
+rev 3944 : fonction hiatus => ajout d'une méthode pour rajouter les exceptions de la langue française nottamment les qui que etc ...
+
+
+
+----------------------------------------------------------------
+fait le 18/12/2011
+
+rev 3940 : les fonctions get_mot sont trop couteuses, il faut programmer une fonction pour enregistrer la correspondance vers_n syllabe_n =>mot
+            fin de la programmation des fonctions hiatus
+rev 3942 : correction des bugs , commentaire sur les fonctions inutiles (qui ne sont plus utilisées get_mot etc ...)
+
+     
+--------------------------------------------------------------------
+fait le 16/12/2011
+
+
+rev 3940 : la fonction hiatus_mot marche parfaitements
+            reste à faire : update_hiatus etc ...
+            update_hiatus : à terminer
+
+
+-----------------------------------------------------------------------------
+fait le 27/11/2011
+
+rev 3939 : pour les informations sur la prononciation moderne, on n'enregistre plus dans texte_class mais directement dans la base de données (ent_db , accent_db ...)
+            tout est bien : tous les accents sont rentrables par l'utilisateur
+
+------------------------------------------------------------------------------
+
+idée de victor :
+
+on identifie les conflits (modifs )
+on identifie les mots qui ne sont pas présents dans la base de donnée
+
+
+-----------------------------------------------------------------------
+histoire de tenues
+algo meme duree => meme valeur
+    note d'après plus longue => on change la valeur de la précédente
+
+
+---------------------------------------------------------------------
+fait le 21/10/2011
+
+
+
+
+rev 3934 : on s'occupe des hiatus ....
+            c'est chaud !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            
+            
+            
+            
+---------------------------------------------------------------
+fait le 08/10/2011
+
+rev 3929 : maintenant on enregistre dans la base de données les infos sur les h aspire et ent
+           et  les accents 
+            opérationnel (reste à tester à mort)
+
+------------------------------------------------------------------
+fait le 01/10/2011
+
+rev 3929 : traitement des H / ent : (fin)
+            programmation/ correction des gros bugs : plus qu'à tester
+            ajout d'un booléen dans  le champ piece (psaume)
+
+
+-----------------------------------------------------------------------
+à faire plus tard : rajouter les champs h_db et ent_db
+
+fait le 02/10/2011
+
+
+rev 3925 : base de donnée de mots
+            procédure d'alimentation de la base
+
+---------------------------------------------
+fait le 23/09/2011
+
+rev 3924 : debut du traitement des h aspires ou non ,ent 
+            fin du traitement des ent
+            ajout d'un champ psaume pour indiquer si une piece supporte le traitement spécifique aux psaumes
+
+
+------------------------------------------------------------------------------
+fait le 18/09/2011
+
+rev 3911 :  début : envoi d'information concernant les accents (intéractif)
+            fin : envoi d'information sur les accents
+rev 3915 :  comparaison version emily-victor ok
+rev 3920 :  export/import du champ texte_class
+-----------------------------------------------------------------------------------
+fait le 16/09/2011
+
+rev 3896 :  création d'une classe pour afficher/analyser les corpus (cf include/texte.php)
+
+--------------------------------------------------------------------------
+fait le 11/09/2011  
+
+rev 3896 : conversion des vers dans un format compatible avec celui d'Olivier Bettens
+            musicxml : 1. premier vers 2. deuxième vers 3. etc...
+            format bettens : premier vers
+                            deuxième vers
+                            troisième ...
+            début traitement de la syllabation à partir du fichier musicxml
+            format bac : nouveau format d'affichage tenant compte des syllabes
+            exemple : qui/au/con#seil/des/ma#lins/
+rev 3905:   affichage des bl fait,
+            reste à faire l'édition intéractive ...
+--------------------------------------------------------------------
+fait le 08/09/2011
+
+rev 3895 : début de l'implémentation du code d'Olivier Bettens
+
+
+---------------------------------------------------------
+fait le 04/09/2011	
+
+rev 3894 : correction d'un bug sur les intervalles
+
+----------------------------------------------------------------------------------------
+fait le 29/08/2011
+
+rev 3880 : debut histogrammes par mesures
+rev 3887 : fin histogrammes par mesures
+rev 3891 : fini programmation recherche successives (reste à tester)
+
+-------------------------------------------------------------
+fait le 27/08/2011
+
+rev 3878 : correction de l'upload du mode par défaut : opérationnel
+
+reste :
+
+    1)virga.org
+        porter virga
+        comment expliquer les calculs ? d'où sortent les chiffres , dico
+        Si c'est un°bien que°l'esperance,				BLBLLBBLB
+        relation durée - accents du francais (nom etc... article, position)
+        dernière syllabe de chaque substantif
+        
+--------------------------------------------------------------
+
+---------------------------------------------------------
+
+fait le 22/08/2011
+
+rev 3868:   mode par défault : upload du fichier de traduction possible
+            téléchargement des fichiers d'exports plus user_friendly (page de téléchargement, on se laisse guider) : lien à partir de la page d'admin
+            jcarroussel avec page de loading (classe)
+            
+-----------------------------------------------
+fait le 19/08/2011
+
+rev 3803 : fin de la programmation du jcarroussel
+rev 3811: finition jcarroussel
+
+
+
+site: midi mole
+----------------------------------------------------
+
+fait le 13/08/2011
+
+
+rev 3714 : fichier links supporte les liens (à tester)
+rev 3724 : links.php fonctionnel (plus de gros bugs), isolement ok 
+rev 3725: page d'aide => isolement
+
+
+reste :
+    1)image pour le carroussel au niveau du recueil
+    2)histogramme par mesures
+
+    3)recherche successive
+        bouton sur meme pages : recherche dans ces résultats
+        page suivante retour
+
+
+    4)virga.org
+        porter virga
+        comment expliquer les calculs ? d'où sortent les chiffres , dico
+        Si c'est un°bien que°l'esperance,				BLBLLBBLB
+        relation durée - accents du francais (nom etc... article, position)
+        dernière syllabe de chaque substantif
+        
+--------------------------------------------------------------
+fait le 12/08/2011
+
+
+rev 3686 : debut isolation (show.php)
+rev 3691 : fin isolation sur show.php
+rev 3692 : debut isolation recherche.php
+rev 3713 : fin de l'isolation dans recherche.php
+            on peut rechercher les mélodies dans des bases précises
+
+rev 3685 : correction des bugs pour l'assignation mode/base (ça semble opérationnel)
+à partir de rev 3679 : debut assignation mode/base
+
+--------------------------------------------------
+fait le 11/08/2011
+
+rev 3678 : fin de la programmation de la partie concernant les modes !!! fichiers traductions etc...(plus qu'à rechercher les bugs)
+reste à faire (par priorité): 
+    1)mode assigné à chaque base (rapide)
+    2)Page de liens 
+    2)isolation
+        a) page de liens (page de lien différente selon les bases )
+        b)recherche limitée à une base
+    4)virga stuff.... (très chaud)
+           
+-----------------------------------------------------
+fait le 10/08/2011 :
+
+rev 3642 :retour à la case départ pour les modes
+rev 3646 : fonction add_child (attributs multiples possibles)
+
+
+-------------------------------------------
+
+
+A finir : modes spéciaux et traductions etc ....
+rev 3642 : amélioration de modes.php
+-----------------------------------------------------------------
+09/08/2011
+
+isolement des bases (boutons retours)
+cookie (isolated)
+    les boutons de menus : 
+        recherche (limité à la base)
+        login 
+        aide (contient les fichiers pdf, download.php?file=guide_pdf&id_base=truc)
+        Liens ( creer table sql :bases default=-1 sinon id_base) : messages bbcodes
+page principale => (vers carnet de notes)
+forum => ? 
+base en mode médiéval : direct dans l'update / ajout
+config traduction !!!!
+modes + traduction 
+assigner mode base (update_base)
+image pour le carroussel au niveau du recueil
+histogramme par mesures
+
+recherche successive
+    bouton sur meme pages : recherche dans ces résultats
+    page suivante retour
+
+
+virga.org
+    porter virga
+    comment expliquer les calculs ? d'où sortent les chiffres , dico
+    Si c'est un°bien que°l'esperance,				BLBLLBBLB
+    relation durée - accents du francais (nom etc... article, position)
+    dernière syllabe de chaque substantif
+    
+---------------------------------------------------------------------
+A faire : 15/07/2011
+
+
+mort 1)export paris 4, serveur d'exploi ,chargement de la base de donnée par psautiers.org
+ ok 2)pages person
+3)option par défaut pour serveur d'exploitation , pour la recherche
+	consultation: arrivée directe
+	(en cours) utilisation recherche par défaut sur une base précise (maronite ! )
+	utilisateur inconnu (recherche dans toutes les bases)
+4)meme visuel propre à chaque base...
+	bouton d'administration 
+	possibilité de chercher des trucs multibases
+(non fait)5)recherche approchée:
+	a) extremes 
+	b)tierces
+	c)
+	
+		psaumes : grandes lignes
+		aba
+		aller retours
+		une note par mesures (à tierce près)
+		cretes
+		+-+
+
+
+-------------------------------------------------------
+début des hostilités :
+	4) customisation de chaque base
+
+
+
+
+
+-------------------------------------------------------
+<x ,y> = x y cos(theta)
+meeus : \sigma x_i
+moi \sigma x_i / \alpha
+
+Voici les notes sur l'avancement du projet
+
+
+
+	add.php
+
+	-ca marche si un fichier xml existe deja, le programme n'entre pas une nouvelle piece, il modifie seulement la table des matieres
+	
+	
+	recherche.php
+	
+	-les fonctions de recherche marchent
+	*on a juste à changer la presentation et enlever les octaves
+	
+	
+Ouaip, j'avais fait deux / trois modifications de add.php (pour la présentation) mais ya un conflit, je peux plus rien faire :'( 
+	
+	Consultation piece
+	
+	
+	begin_box :
+	1)lily
+	2)fac simile
+	3)image jpeg partoch moderne (s'il y a un fichier xml)
+	
+	
+	
+	Piece ajout
+	
+	auteur
+	compositeur
+	champ texte
+	
+	
+	
+	
+	auteur texte
+	voir texte
+	texte 
+	
+	
+	update utilisateur
+	position encadré
+	
+	
+	
+----------------------------------------------------------------------
+	Samedi 3 juillet
+	
+	retrouvé le pb de la pentatonicité
+	pb logique : si jamais on soumet une musique avec que des dos
+			pentatonicité 100% mais c'est pas du tout penta
+			
+	
+	
+		
+	

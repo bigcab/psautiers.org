@@ -1,0 +1,176 @@
+<html><head><title>Consultation de la base</title>
+
+
+
+
+<link href="show.php_files/style.css" rel="stylesheet" type="text/css"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body>
+
+
+
+<div id="contenu">
+
+<div id="header">
+<img src="show.php_files/banniere.png">
+</div>
+
+
+<script>
+function change_current_menu(li)
+{
+var before=document.getElementById("current");
+before.removeAttribute("current");
+li.setAttribute("id","current");
+}
+function change_table(id_str)
+{
+element = document.getElementById(id_str);
+if (element.style.display == 'table')
+element.style.display = 'none';
+else
+{
+elems = document.getElementsByTagName('table');
+for (i=0; i<elems.length; i++)
+{
+if (elems[i].style.display == 'table') elems[i].style.display='none';
+}
+element.style.display = 'table';
+}
+}
+</script>
+<div id="article">
+<div id="texte">
+<div id="menu">
+
+<a href="http://localhost/index.php"><img src="show.php_files/home.png"> Page principale</a>
+<a href="http://localhost/recherche.php"><img src="show.php_files/find.png"> Recherche</a>
+<a href="http://localhost/show.php"><img src="show.php_files/consulter.png"> Consultation</a>
+<a href="http://localhost/login.php"><img src="show.php_files/add.png"> Login</a>
+</div>
+<!--
+<div id="menu">
+<ul>
+<li onclick='change_current_menu(this)' ><a class='navigation' href='index.php'>Page Principale</a></li><li onclick='change_current_menu(this)' ><a class='navigation' href='recherche.php'>Recherche</a></li><li onclick='change_current_menu(this)' id='current'><a class='navigation' href='show.php'>Consultation</a></li><li onclick='change_current_menu(this)' ><a class='navigation' href='login.php'>Connexion</a></li>			</ul>
+</div>
+-->
+
+<div id="titre">
+
+<h1>Consultation de la base</h1>
+</div>
+<br><br>
+
+<h2 id="">Affichage d'une base</h2>
+
+
+
+<table class="box_table_contenu">
+
+<tbody><tr>
+<td>Affichage de la base root</td>
+</tr>
+<tr>
+<td>
+<table style="border: 1px solid grey; border-collapse: collapse;" border="1">
+<tbody><tr>
+<th>Titre du recueil</th>
+<th>Titre uniforme</th>
+<th>Abreviation</th>
+<th>Imprimeur</th>
+<th>Lieu</th>
+<th>Timbres</th>
+<th>Solmisation</th>
+<th>Date d'impression</th>
+<th>Date de révision</th>
+<th>Auteur de la dernière revision</th>
+<th>Auteur de la fiche</th>
+
+
+</tr>
+<tr>
+<td>
+<a href="http://localhost/show.php?id_base=1&amp;id_recueil=1">root</a>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td>01/01/1970 01:00:00</td>
+<td></td>
+<td></td>
+
+</tr>
+<tr>
+<td>
+<a href="http://localhost/show.php?id_base=1&amp;id_recueil=15">another test</a>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td>11/10/2008 16:46:27</td>
+<td></td>
+<td></td>
+
+</tr>
+<tr>
+<td>
+<a href="http://localhost/show.php?id_base=1&amp;id_recueil=16">tttttest</a>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>11/10/2008 16:48:32</td>
+<td></td>
+<td></td>
+
+</tr>
+<tr>
+<td>
+<a href="http://localhost/show.php?id_base=1&amp;id_recueil=17">TTTTTTTTTTTEEEEEEEEESSSSSSSSTTTTTTTTTTTT</a>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>11/10/2008 17:16:47</td>
+<td></td>
+<td></td>
+
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr><td><a href="http://localhost/show.php">Retour</a></td></tr>
+
+</tbody></table>
+<!-- Fin du tableau box_table_contenu -->    
+
+</div>
+</div>
+
+<div id="footer">
+© 2008 B.D. et Y.D. pour Paris IV / Design P.B.
+</div>
+
+<div id="bas">
+</div>
+</div>
+
+
+
+
+</body></html>

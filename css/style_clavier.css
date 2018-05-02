@@ -1,0 +1,27 @@
+.blanche
+{
+	background-color: white;
+	border: 1px solid black;
+	height: 198px !important ;
+	height: 200px;
+	width: 40px;
+
+	margin:0;
+	padding:0;
+}
+.noire
+{
+	background-color: black;
+	border: 1px solid grey;
+	height: 148px !important;
+	height: 150px;
+	width: 15px;
+	margin:0;
+	padding:0;
+}
+
+.blanche:active
+{
+	background-color: black;
+}
+

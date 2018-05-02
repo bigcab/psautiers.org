@@ -1,0 +1,32 @@
+
+
+This is the fast Installation notice :
+
+
+    1)add code repository 
+
+    3)chown and chmod the root server directory to the right user
+    1) create all dirs :
+        mkdir /var/www/logs 
+        touch /var/www/logs/log.txt
+        touch /var/www/logs/error.txt
+        touch /var/www/logs/auth.txt
+        touch /var/www/logs/command.txt
+        mkdir /var/www/xml
+        mkdir /var/www/zip
+        mkdir /var/www/mp3
+        mkdir /var/www/png
+        mkdir /var/www/fichiers_finale
+        mkdir /var/www/images_jpg
+        mkdir /var/www/images_table_matieres
+        mkdir /var/www/images_titres
+        mkdir /var/www/incipits_jpg
+        mkdir /var/www/js
+        mkdir /var/www/jquery
+        mkdir /var/www/css
+        mkdir /var/www/include
+        mkdir /var/www/images
+        mkdir /var/www/images/design
+    2)copy include/cfg_fields_default.xml in the root page to /var/www/include/cfg_fields.xml
+        
+        

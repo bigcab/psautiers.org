@@ -1,0 +1,10 @@
+Export file for psautiers.org/ppiv version 1.1
+This version supports the following options : 
+	 - pattern recognition for import export
+	 - xml import export
+	 - import/export fichiers_finales, mp3, fichier_jpg,image_incipit_jpg,fichier_lilypond
+	 - melody import/export
+	 - hiatus table
+	 - accent_db table
+	 - h_db_table
+	 - field texte_class not usefull anymore

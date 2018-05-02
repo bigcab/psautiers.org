@@ -1,0 +1,259 @@
+rev 2741 : debut de l'analyse par mesure 
+rev 2803 : analyse par mesure programmé non affiché joliment c'est tout
+rev 3124 : bot python pour export en masse reste à faire l'import
+rev 3219 : bot python import ok , export ok avec fichier de log etc... bot plus ou moins intelligent
+rev 3232 : ajout des possibilités php avec les variables updated + log lors de l'export
+rev 3349 : ajout analyse fragment opérationnel, fin des travaux des vacances d'été
+
+rev 3357 : nouvelle version déposée (brevet de protection)
+
+A venir : Quantification vectorielle , recherche de critère ...
+
+Pour le 28 aout 2010 
+	-parler du psaume 19 id error while importing piece id:271 and file import error fichier_xml
+	-verifier cron.daily à trois heures du mat
+	
+
+BOnjour, 
+Voici les tables de la base. Certaines ne me sont pas tout à fait familières, mais dans l'ensemble c'est comme ceci : 
+Cotes
+Groupe_textes
+Lieux_conservation
+Melodies
+Nom_base
+Noms_cites
+Noms_propres
+Pieces
+Recueils
+Table_matieres
+Table_ref_1
+Table_ref_2
+Table_ref_3
+Table_ref_4
+Table_ref_5
+Textes
+soit 16 tables. 
+L'idée de base est d'avoir une base de données qui puisse permettre de faire un catalogue de livres contenant de la musique, et de chercher aussi bien dans les chaînes de caractères que dans les notes de musique. 
+
+Les partenaires prévus : 
+1.l'institution qui aimerait avoir son catalogue en ligne avec des fonctions d'interrogation sur les recueils, les titres des pièces, le texte des pièces, la musique des pièces, la cote et pourquoi pas d'autres champs. Il pourrait y avoir plusieurs institutions intéressées, avec chacune la gestion de ses propres fiches, de sa propre partie de la base. 
+
+2.Le chercheur qui se fait un catalogue pour étudier comment marche un groupe de pièces, et qui a besoin de rentrer ses partitions dans un catalogue aujourd'hui, avec ordre, pour pouvoir interroger le music xml plus tard (sous différentes formes, bien qu'aujourd'hui on prévoit seulement d'appeler le musicxml par les notes). ce chercheur travaille généralemnt en bibliothèque, avec le livre sur les genoux, et il le feuillette soigneusement en relevant au fur et à mesure la composition du bouquin. IL y a d'innombrables détails qui peuvent être importants, surtout si ce sont de vieux ouvrages : qualité du papier, signatures manuscrites, marques des possesseurs, nature de la reliure, etc. Tout ceci peut aller dans un champ "commentaire", en vrac. Mais il y a des choses qu'on veut absolument retrouver avec ordre, donc indexer : c'est notamment l'ordre d'apparition des pièces ou des bouts de textes sans musique (préfaces, dédicaces, poèmes, illustrations en plus etc.) dans le livre. Le titre des pièces. Le texte des pièces. la musique des pièces.
+
+3.La personne qui va interroger la base : intéressés par tel ou tel "corpus" (=telle ou telle base, plutôt les psaumes, ou plutôt les sonates de diabelli, ou plutôt etc.), les chercheurs devraient pouvoir retrouver par exemple : 
+a) une séquence de notes dans une pièce, au début, ou bien n'importe où, en relatif ou en absolu
+b) le titre des pièces
+c) le contenu d'un recueil précis (table des matières)
+d) la liste des recueils 
+et filtrer à chaque fois sur quelques critères : date des receuils entre tant et tant, recherche dans telle ou telle base, ou bien toutes.
+e) une recherche d'un mot dans les titres de pièces
+f) ou d'un nom propre dans les dédicaces et privilèges (ce sont généralement des noms importants pour l'histoire, on doit les lister à part car il n'est pas prévu de saisir systématiquementle texte intégral de ces textes particuliers, sans musique, mais en revanche il faut tout de suite savoir quels noms propres ils contiennent).
+
+LA description des tables : 
+La table Nom_base comprendrait trois champs
+code_base
+description
+references
+Je ne sais pas aujourd'hui à quoi servira le champ references mais en tous cas il faudrait le prévoir. ce sont trois champs de type texte, de maximum 50 caractères, le premier est indexé.
+La table recueils comprendrait 16 champs : 
+code_base
+id_recueil
+titre uniforme
+titre
+abreviation
+image_titre_jpg
+imprimeur
+lieu
+solmisation
+timbres
+date impression
+commentaire public
+commentaire réservé
+date fiche
+nom auteur fiche
+date révision
+nom auteur révision
+commentaire révision
+dat
+Tous ces champs en tye de données texte, taille du champ 50 caractères, null pas interdit, chaîne vide autorisée, non indexé, aucun contrôle IME (je ne sais pas ce que c'est...) sauf : le champ code_base qui lui est indexé et lié au même champ dans la table Nom_base; le champ id_recueil qui est un champ incrémentation automatique numérique,indexé aussi, ces deux champs ensemble formant clé. Les champs solmisation et Timbres qui seraient des champs oui/non. ET les trois champs commentaire, qui devraient être au format "mémo" en access, cad de taille variable non définie a priori.
+commentaire des champs : 
+Le champ titre uniforme servira à donner un titre général aux partitions qui n'en ont pas (ou qui en ont des très anciens, une peu bizarres pour qui ne connaît pas, et donc introuvables pour un chercheur pas au courant. Exemple : "A Mr de talleyrand, apéritifs impromptus" pour un recueil de pièces pour piano, dans le champ titre uniforme on mettra "pièces pour piano" et dans le champ titre, le titre effectif, même s'il est complètement bizarre).
+Le champ abréviation (pour faciliter la citation du recueil partout où on en parlera ailleurs) 
+Le champ image du titre sert à pouvoir mettre un lien vers un image jpg du titre, très utile pour la déco ou la typographie.
+Les champs imprimeur, lieu d'impression, date d'impression sont traditionnels je pense pour un bouquin.
+Je voudrais avoir un champ "solmisation" et un champ "timbre" car ce sont des choses qui doivent être retrouvables par moi dans ma base, de façon très rapide, sans passer par la recherche dans le texte non indexé du champ "commentaire". Mais cela fait techniquement partie du commentaire sur le bouquin. 
+Je signale aussi que j'avais pensé dans un premier temps un second champ de commentaire dit "commentaire réservé", qui je voudrais inaccessible au public, et que ne sachant pas ce qui peut se faire d'autre en bdr, je l'ai fait comme ça.
+Sandoute on pourrait entrer les dates de manière automatique?
+le nom de l'auteur de la révision peut tenir en deux lettre (initiales) comme en cinquante (maxi). Un champ "commentaire révision" serait laissé pour les collaborateurs.   
+Entre cette table et celle des pièces qui la composent, une table de liaison, car un recueil a plusieurs pièces, et une même pièce peut appartenir à plusieurs recueils. la table de liaison que j'ai appelé table_matieres permet aussi de stocker une image de la table, qui est parfois très très compliquée (au XVIe siècle, c'est même assez inimaginable). 
+On retrouve les champs : 
+id_base
+id_recueil
+rang
+ref_piece
+notes_biblio_pag_orig
+image facsimile
+Commentaire des champs : 
+id_base toujours pareil, texte, 20 car., indexé, lié au même champ dans la table recueils;
+id_recueil, numérique, entier long, indexé, lié au même champ dans la table recueils;
+rang, numérique, entier long, indexé, permet de classer les pièces et textes dans le recueil
+ref_pièce, numéro unique de la pièce prise dans la table suivante, un champ texte  a priori?
+notes_biblio_pag_orig, champ texte plutôt de type mémo, cad longueur non prévue d'avance. LA pagination originelle, les remarques sur les particularités de la pièce dans ce recueil précis seront ecrites ici.
+et un champ permettant d'avoir une image de la source, en lien hypertexte j'imagine.
+
+UNe table pièces : 
+avec les champs : 
+id_base
+ref_piece
+textnum
+melnum
+fichier_finale
+fichier_musicxml
+image_jpg
+incipit_jpg
+note_finale
+ambitus
+armure
+clés
+rubrique
+nombre_parties
+codage incipit monika
+code_table_ref_1
+code_table_ref_2
+code_table_ref_3
+code_table_ref_4
+code_table_ref_5
+commentaire_public
+commentaire_prive
+commentaire_revision
+commentaire des champs : 
+id_base : toujours même chose, indexé avec doublons possibles, texte 20 caractères, lié au même champ dans la table table des matières.
+ref_piece idem, indexé, et lié au champ homonyme dans la table table des matières, une pièce pouvant faire partie de plusieurs tables des matières. 
+textnum : le  numéro unique du texte de cette pièce, pris dans la table des textes, un champ texte limité à 50 caractères
+melnum : le numéro unique de la mélodie de cette pièce, pris dans la table des mélodies, un champ texte, limité à 50 caractères
+fichier_finale : lien hypertexte
+fichier_musicxml : idem
+image_jpg : idem (je prévois pour ceux qui n'auront aucun music xml à me fournir)
+incipit_jpg (je prévois ici aussi pour introduire l'image du début (incipit) des pièces, qu'on a dans d'autres bases sous une forme graphique dans le meilleur des cas, pour pouvoir récupérer leurs incipits graphiques le cas échéant avant de les passer au musicxml, c'était le vieux système...)
+note_finale (note finale de la pièce, un tout petit champ texte)
+ambitus (écart entre la note la plus basse et la note la plus haute de la pièce, dont la réponse doit être donnée sous la forme : D4-C6, deux notes, et non pas un intervalle)(est-ce que cela peut se programmer à patir de music xml?)
+armure (les bémols ou les dièses à la clés. Cela peut aussi se trouver dans le music xml, mais est-ce qu'on peut aussi le rentrer à la main?)
+clés (idem, c'est la clé du début, elle est dans le music xml mais il faut aussi pouvoir la rentrer à la main si on n'a pas de musicxml)
+rubrique (le  bout de texte qui va accompagner certaines pièces dansla marge ou sous le titre, un champ texte encore)
+nombre_parties : un champ numérique entier long, nombre de voix (ça peut être un critère de filtrage pour l'utilisateur extérieur)
+codage incipit monika (ici je voudrais stocker les données music xml concernant les hauteurs sous forme numérique (+1/-3/+4/-4/0/0) en termes d'écart, pour pouvoir aussi converser avec les utilisateurs d'excel en interne dans l'équipe de recherche, dons les écarts mais dans un champ texte.
+code_table_ref_1 un champ texte de taille 20
+code_table_ref_2 idem
+code_table_ref_3 idem
+code_table_ref_4 idem
+code_table_ref_5 idem
+commentaire_public un champ texte pour mes commentaires, plutôt de type mémo
+commentaire_prive idem
+commentaire_revision idem, mais un champ limité suffirait (255). 
+
+
+
+la tables Cotes contient les champs : 
+ident
+Lieu_conservation
+id_base
+id_recueil
+cote
+elle doit servir à conserver correctement le cote dans des bibliothèques déjà cataloguées. 
+le champ ident est une incrémentation automatique, il est indexé et sans doublons (clé)
+le champ lieu_conservation est un champ texte de 50 caractères
+ainsi que le champ id_base déjà vu, texte, 20 caractères, indexé avec doublons possibles. ce champ lié au champ homonyme de la table Recueils, plusieurs cotes possibles pour un même bouquin (exemplaires différents)
+le champ id_recueil est un champ numérique entier long indexé, lié au champ recum de la table recueils. 
+et le champ cote est un champ texte de 50 caractères ( on me dit qu'il n'est pas indexé, mais comment on fait quand on a le bouquin en mains et qu'on veut juste l'appeler par sa cote?)
+
+La table Noms_cites est la table permettant de stocker les noms propres trouvés dans les préfaces, dédicaces etc. Elle contient les champs suivants : 
+ident
+id_base
+id_recueil
+ident_nom
+commentaire
+Le premier champ est indépendant, c'est comme dans la table précédente (mais c'est un champ indépendant)à incrémentation automatique, indexé sans doublons (clé)
+les deux champs suivants comme d'habitude, et reliés à la table recueils.
+Le champ ident_nom est un champ texte de max 50 caractères, dont le null n'est pas autorisé et la chaîne vide non plus, pas indexé.Il sert à renvoyer à la table suivante où les noms sont plus abondamment commentés pour éviter les homonymes (fréquents).
+Le champ commentaire est un champ de texte à mon avis pas trop long (255 caractères suffisent). 
+Chacune de ces deux tables (cotes et Noms_cites) s'appuis sur une table de détail : 
+
+la table cote renvoie à la table Lieu_conservation
+où l'on trouve les champs : 
+Lieu_conservation un champ texte de 50 caractères maxi, indexé sans doublons (clé), qui est donc relié au même champ dans la table cote.
+Libelle_long qui permet de développer le nom complet qui peut être fort compliqué (255 max)
+Commentaire qui permet de commenter, toujours un champ texte de 255 caractères max , pas indexé . 
+
+La table Noms_cites renvoie quant à elle à une autre table, la table Noms_propres
+qui contiendrait les champs : 
+ident_nom
+nom_complet
+commentaire
+le premier champ est lié à la table Noms-cites, il est de type texte, 20 caractères, indexé sans doublons (clé) et le null ou la chaîne de caractères vide ne sont pas autorisés
+le champ nom_complet devrait accueillr en 100 caractères max  le nom complet....indexé avec doublons, chaîne vide autorisée
+le dernier champ, commentaire, de type texte et de taille 255 max, ne sera pas indexé. Servira à dire les degrés de parenté et autres indications....
+
+Ensuite, la postérité de la table "pièces" : 
+Nous avons imaginé séparer les textes des musiques. C'était notre point de départ : une partition c'est un texte avec une musique, mais la même musique sert à d'autres oeuvres (d'autres textes ou pas de texte), et le même texte peut aller avec d'autres musiques (ou pas de musique si c'est une préface ou ne dédicace). D'où le soin pour les séparer. Peut-être est-ce complètement obsolète avec musicxml? 
+
+donc dans cette optique qui était la nôtre : 
+Une table des textes avec les champs : 
+id_base
+textnum
+texte
+auteur
+nom_groupe
+biblio_txt
+incipit
+comment_1
+comment_2
+comment_3
+Avec le champ id_base relié à la table pièces, ainsi que le champ textnum.
+le champ id_base est sans surprise, 20 caractères indexé sans doublons (clé). le secon, textnum, pourrait être un champ autoincrémenté, mais à la vérité j'avais commencé à la main à attribuer des numéros à moitié sémantiques, donc aujourd'hui on a gardé un format texte indexé avec doublons (clé aussi), comme pour le champ melnum. Ce champ textnum est l'identifiant unique du texte. J'imagine que vous allez me dire qu'on ne peut pas continuer à donner de numéros à la main et vous aurez raison. Donc à ce moment-là est-ce que cela ne sera pas un champ autoincrémenté, numérique, entier?
+Je pensais donc taper ensuite le texte complet dans le champ suivant (texte), donc un champ...texte de longueur non fixée, non indexé.
+ensuite il y a des auteurs : un champ auteur du texte, 50 caractères indexé avec doublons
+un champ nom_groupe qui n'est pas indexé, c'est un champ texte de 50 caractères qui doit servir à permettre de rattacher dans une table cartains types de textes qui ont un rangement spécial outre le fait d'être utilisées dans ma musique : par exemple les textes de Platon, qui auraient besoin d'être repérés par leur numéro dans le catalogue Platon, ce qui sera précisé dans la table groupes de textes", ou encore, comme ma base actuelle, les textes de psaumes, qui ont un classement "entre psaumes" particulier...il fallait une table pour exprimer ce niveau de regroupement des textes entre eux, dans une logique qui peut être différente de celle des livres où ils apparaissent, donc la table Groupes_textes qui suivra. POur une raison qui m'échappe mais qui est peut-être due à l'inadvertance mon collègue me dit qu'il ne faut pas autoriser la compression unicode sur ce champ.
+un champ pour le commentaire biblio, ici il s'appelle biblio_txt, un champ texte de longueur non définie, non indexé.
+Un champ incipit (début du texte), censé nous renvoyer seulement le début du texte, dont je me demande aujourd'hui s'il est utile (sauf s'il est indexé et que le champ texte ne l'est pas).
+et trois champs de commentaire, un public, un réservé, un de révision. 
+
+La table Groupe_textes permet donc d'avoir un niveau de regroupement des textes supérieur : il est lié à la table Textes par les deux premiers champs, id_base et nom_groupe.
+Il comprend ces deux champs qui sont indexés et forment clé plus : un champ reference qui permet de donner un numéro d'ordre dans le groupe considéré, au format nombre général (par exemple dans les textes de psaume le 3e) puis trois champs texte libres (limités à 80 caractères par exemple) et un champ commentaire au format texte sans limitation, tous ceux-là non indexés.Les trois champs "libellé 1, 2 et 3" me serviraient à stocker la correspondance des traductions existantes en plusieurs langues par exemple.
+
+ La table melodies comprend les champs : 
+id_base
+melnum
+indice_partie
+fichier mp3
+timbre
+commentaire
+le code base...relié à la table pièces, indexé etc.
+le champ melnum serait un champ à incrémentation automatique (donc numérique et indexé sans doublons) si je n'avais pas commencé manuellement avec des codes sémantiques (c'est donc actuellement un champ texte, indexé sans doublons, d'une taille max de 50). je crois que comme le champ textnum on ne va pas pouvoir continuer à la min...il faudra que vous me disiez.
+je ne sais absolument plus pourquoi nous avions un champ indice_partie, un champ numérique entier long non indexé. Ca doit servir je suppose. 
+nous pensions faire dans le champ fichier mp3 le lien avec les fichiers sonores (sans paroles, juste un vilain petit son électronique) mais je ne sais pas si cela va durer avec le music xml et votre travail? donc c'était un lien hypertexte.
+la champ timbre est un peu spécial. Certaines musiques sont transmises juste avec des paroles et l'indication"sur l'air de machinchouette". Nous appellon machinchouette un timbre, et pesonne ne sait traiter le rangement de cela. Donc nous avions prévu un champ timbre pour les stocker, comme des mélodies, sauf qu'on aura juste le titre, pas les mélodies.IS la chaon est dans la base, j'avais pensé que le lecteur pouvait la chercher par son titre (de pièce). Mais il y a aussi des timbres que nous avons perdus : on n'a plus que le titre. IL faut pouvoir le mettre -et en plus c'est une mélodie pour nous, ce titre). Donc un champ texte pas trop court, par ex 80 . Je ne sais pas s'il faut l'indexer.Commentaire : 255, non indexé. 
+
+POur finir mes pièces appartiennent possiblement à des catalogues de pièces existant déjà, de la même manière que les recueils sont dans des bibliothèques (table cotes), que les textes sont parfois tirés d'ensembles plus grands (table groupes_textes). Par exemple des pièces déjà dans d'autres systèmes de classement : le catalogue Köchel pour Mozart, le catalogue BWV pour Bach etc. C'est pour cela qu'on a placé cinq niveaux de référence supplémentaires pour nos pièces. POur cela nous avons laissé la place dans la table des pièces (code_table_ref_1à5)
+Donc dans ces cinq tables le mêe principe : 
+premer champ : 
+id_base (comme d'habitude, ici lien avec table pièces)
+code_table_ref_1, un champ texte de 50 max, indexé, null possible (tiens? je me demande si on est ok là?)
+et enfin champ reference_1 , du texte, non indexé, max 50, je suppose qu'on y mettra la cote dans l'autre catalogue déjà existant. de même pour les quatre autre tables. 
+
+
+Alice Tacaille
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

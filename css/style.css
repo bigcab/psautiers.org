@@ -1,0 +1,403 @@
+
+body
+{
+/*background-color: rgb(204,220,255);*/
+margin: 0;
+text-align: center;
+font-family: Verdana;
+font-size: 13px;
+}
+#contenu
+{
+background-color: rgb(198,216,255);
+width: 900px;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+}
+#texte
+{
+background-color: rgb(251,251,251);
+padding: 20px;
+}
+#footer
+{
+text-align: center;
+background-color: rgb(251,251,251);
+font-size: 11px;
+}
+hr
+{
+color: rgb(192,192,192);
+background-color: rgb(192,192,192);
+height: 1px;
+border: 0;
+}
+#menu
+{
+margin-bottom: 10px;
+text-align: center;
+}
+#menu a, a:visited
+{
+color: rgb(5,82,224);
+text-decoration: none;
+margin: 5px;
+}
+#menu a:hover
+{
+color: rgb(0,128,192);
+text-decoration: underline;
+}
+a, a:visited
+{
+color: rgb(5,82,224);
+text-decoration: none;
+}
+a:hover
+{
+color: rgb(0,128,192);
+text-decoration: underline;
+}
+#bas
+{
+width: 900px;
+height: 47px;
+background: rgb(204,220,255) url(../images/design/bas.png);
+margin-bottom: 15px;
+}
+h1
+{
+font-size: 15px;
+color: rgb(79,137,208);
+background: url(../images/design/h1.png);
+background-repeat: no-repeat;
+padding-left: 25px;
+margin-top: 20px;
+}
+h2
+{
+font-size: 12px;
+color: rgb(79,137,208);
+/*background: url(../images/design/h2.png);*/
+background-repeat: no-repeat;
+padding-left: 25px;
+margin-top: 0px;
+margin-left: 50px;
+}
+img
+{
+border: 0;
+}
+#haut
+{
+width: 900px;
+height: 47px;
+background: rgb(204,220,255) url(../images/design/haut.png);
+margin-top: 15px;
+background-repeat: no-repeat;
+}
+#ariane
+{
+font-size: 11px;
+margin-top: 10px;
+}
+#boite
+{
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: rgb(245,245,255);
+padding: 10px;
+border: 1px solid rgb(200,200,200);
+}
+table /* Tableau */
+{
+/*width: 100%;*/
+font-size: 13px;
+text-align: left;
+margin: 0;
+padding: 10px;
+border-collapse: inherit;
+}
+.box_table_contenu
+{
+width: auto !important;
+}
+tr /* Ligne */
+{
+
+}
+
+td /* Colonne */
+{
+padding-left: 5px;
+}
+
+th /* En tête du tableau */
+{
+padding: 3px;
+font-size: 12px;
+background-color: rgb(224,234,252);
+border: 0;
+font-weight: normal;
+}
+table a
+{
+color: rgb(74,131,234);
+}
+#tableau_haut
+{
+width: 50%;
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: rgb(245,245,255);
+padding: 10px;
+border: 1px solid rgb(200,200,200);
+}
+.tableau_info
+{
+	width: 50%;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: rgb(245,245,255);
+	padding: 10px;
+	border: 1px solid rgb(200,200,200);
+}
+
+#info_recueil
+{
+	width: 100%;
+}
+
+#info_base
+{
+	width: 100%;
+}
+
+#info_piece
+{
+	width: 100%;
+}
+
+.table_no_show {display: none;} 
+.table_show {display: table-row;} 
+
+.box_table_js_ouvert
+{
+        display: table;
+ 
+}
+
+.box_table_js_ferme
+{
+        display: none;
+}
+
+
+
+
+
+/*debut du style pour les infobulles*/
+
+span.longue {
+   position: relative;
+   color: red;
+   text-decoration: none;
+}
+span.longue span.bulle {
+   display: none; /* On masque l'longuebulle. */
+}
+span.longue:hover {
+   background: none; /* Correction d'un bug d'Internet Explorer. */
+   text-decoration: underline;
+   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+
+/*   cursor: help; On change le curseur par défaut par un curseur d'aide. */
+}
+span.longue:hover span.bulle {
+   display: inline; /* On affiche l'longuebulle. */
+   position: absolute;
+
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   top: 30px; /* On positionne notre longuebulle. */
+   left: 20px;
+
+   background: white;
+
+   color: green;
+   padding: 3px;
+
+   border: 1px solid green;
+   border-left: 4px solid green;
+}
+
+span.breve {
+   position: relative;
+   color: black;
+   text-decoration: none;
+}
+span.breve span.bulle {
+   display: none; /* On masque l'brevebulle. */
+}
+span.breve:hover {
+   background: none; /* Correction d'un bug d'Internet Explorer. */
+   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+    text-decoration: underline;
+/*   cursor: help;  On change le curseur par défaut par un curseur d'aide. */
+}
+span.breve:hover span.bulle {
+   display: inline; /* On affiche l'brevebulle. */
+   position: absolute;
+
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   top: 30px; /* On positionne notre breve bulle. */
+   left: 20px;
+
+   background: white;
+
+   color: green;
+   padding: 3px;
+
+   border: 1px solid green;
+   border-left: 4px solid green;
+}
+
+
+
+
+span.h_non_aspire {
+   position: relative;
+   background-color: green;
+   text-decoration: none;
+}
+span.h_non_aspire span.bulle {
+   display: none; /* On masque l'h_non_aspirebulle. */
+}
+span.h_non_aspire:hover {
+
+   text-decoration: underline;
+   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+
+/*   cursor: help;  On change le curseur par défaut par un curseur d'aide. */
+}
+span.h_non_aspire:hover span.bulle {
+   display: inline; /* On affiche l'h_non_aspirebulle. */
+   position: absolute;
+
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   top: 60px; /* On positionne notre h_non_aspirebulle. */
+   left: 20px;
+
+   background: white;
+
+   color: blue;
+   padding: 3px;
+
+   border: 1px solid green;
+   border-left: 4px solid green;
+}
+
+span.h_aspire {
+   position: relative;
+   background-color: blue;
+   text-decoration: none;
+}
+span.h_aspire span.bulle {
+   display: none; /* On masque l'h_aspirebulle. */
+}
+span.h_aspire:hover {
+   text-decoration: underline;
+   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+
+/*   cursor: help; On change le curseur par défaut par un curseur d'aide. */
+}
+span.h_aspire:hover span.bulle {
+   display: inline; /* On affiche l'h_aspirebulle. */
+   position: absolute;
+
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   top: 60px; /* On positionne notre h_aspirebulle. */
+   left: 20px;
+
+   background: white;
+
+   color: blue;
+   padding: 3px;
+
+   border: 1px solid green;
+   border-left: 4px solid green;
+}
+
+
+
+span.ent_grave {
+   position: relative;
+   background-color: maroon;
+   text-decoration: none;
+}
+span.ent_grave span.bulle {
+   display: none; /* On masque l'ent_gravebulle. */
+}
+span.ent_grave:hover {
+   text-decoration: underline;
+   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+
+/*   cursor: help; On change le curseur par défaut par un curseur d'aide. */
+}
+span.ent_grave:hover span.bulle {
+   display: inline; /* On affiche l'ent_gravebulle. */
+   position: absolute;
+
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   top: 60px; /* On positionne notre ent_gravebulle. */
+   left: 20px;
+
+   background: white;
+
+   color: blue;
+   padding: 3px;
+
+   border: 1px solid green;
+   border-left: 4px solid green;
+}
+
+
+
+span.ent_non_grave {
+   position: relative;
+   background-color: yellow;
+   text-decoration: none;
+}
+span.ent_non_grave span.bulle {
+   display: none; /* On masque l'ent_non_gravebulle. */
+}
+span.ent_non_grave:hover {
+   text-decoration: underline;
+   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+
+/*   cursor: help;  On change le curseur par défaut par un curseur d'aide. */
+}
+span.ent_non_grave:hover span.bulle {
+   display: inline; /* On affiche l'ent_non_gravebulle. */
+   position: absolute;
+
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   top: 60px; /* On positionne notre ent_non_gravebulle. */
+   left: 20px;
+
+   background: white;
+
+   color: blue;
+   padding: 3px;
+
+   border: 1px solid green;
+   border-left: 4px solid green;
+}
+

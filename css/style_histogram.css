@@ -1,0 +1,268 @@
+.sortable { list-style-type: none; margin: 0px; padding: 0px; border-left: 1px solid #aaa;}
+.sortable li { margin: 0px 0px 0px 0; padding: 3px; float: left; width: 20px; height: 300px; font-size: 0.5em; text-align: center; 
+/*    border-right: 1px solid #aaa; border-top: 1px solid #aaa; border-left: 0.5px solid #aaa;}*/
+    }
+
+.sortable li:hover { background-color: lightgrey ; margin: 0px 0px 0px 0; padding: 3px; float: left; width: 25px; height: 310px; font-size: 1em; text-align: center; color: red;
+/*    border-right: 1px solid #aaa; border-top: 1px solid #aaa; border-left: 0.5px solid #aaa;}*/
+    }
+
+
+
+/*#trash{position:absolute; top: 3px; left: 400px; height: 50%;margin: 0px;  padding: 0px; border-left: 1px solid #aaa;width: 260px; background-color: lightgrey}*/
+
+#trash{position:absolute; top: 3px; left: 400px; height: 63%;margin: 0px;  padding: 0px; border-left: 1px solid #aaa;width: 260px; background-color: lightgrey}
+
+/* suppression des puces sur les listes */
+div.stats ul { list-style: none; }
+div.stats .percent {
+    /* on passe l'élément span correspondant à la classe .percent
+    en affichage en bloc pour pouvoir lui donner une dimension.
+    Diverses autres choses sont modifiées ensuite à votre convenance. */
+    display: block;  /* on affiche le span sous forme de bloc pour lui affecter des dimensions */
+    height: 1.5em;
+    line-height: 1.5em;
+    margin: 5px 10px;
+    padding: 0 5px;
+    text-align: right;
+    color: #fff;
+    font-weight: bold;
+    font-family: monospace; 
+    -moz-border-radius: 5px;  /* un petit arrondi pour les navigateurs le supportant */
+    border-bottom: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    cursor: default;
+}
+
+
+
+.box{height: 20px;width: 20px;  text-align: center; font-size: 1em;}
+.bar_bas{    border-right: 1px solid #aaa; }
+.do .bar_bas{background-color: red ;}
+.re .bar_bas{background-color: blue;}
+.mi .bar_bas{background-color: green;}
+.fa .bar_bas{background-color: yellow;}
+.sol .bar_bas{background-color: violet;}
+.la .bar_bas{background-color: maroon;}
+.si .bar_bas{background-color: lawngreen;}
+
+
+/*.nothing .bar_haut{background-color: lightgrey;}*/
+.nothing .bar_bas{background-color: grey;}
+
+.dod .bar_bas{background-color: crimson ;}
+.red .bar_bas{background-color: darkblue;}
+.fad .bar_bas{background-color: powderblue ;}
+.sold .bar_bas{background-color: purple;}
+.lad .bar_bas{background-color: deeppink;}
+
+
+.reb .bar_bas{background-color: lightblue;}
+.mib .bar_bas{background-color: lightgreen;}
+.lab .bar_bas{background-color: navy;}
+.sib .bar_bas{background-color: magenta;}
+
+
+.b0 .bar_haut {height: 100%;}
+.b0 .bar_bas {height: 0%;}
+.b1 .bar_haut {height: 99%;}
+.b1 .bar_bas {height: 1%;}
+.b2 .bar_haut {height: 98%;}
+.b2 .bar_bas {height: 2%;}
+.b3 .bar_haut {height: 97%;}
+.b3 .bar_bas {height: 3%;}
+.b4 .bar_haut {height: 96%;}
+.b4 .bar_bas {height: 4%;}
+.b5 .bar_haut {height: 95%;}
+.b5 .bar_bas {height: 5%;}
+.b6 .bar_haut {height: 94%;}
+.b6 .bar_bas {height: 6%;}
+.b7 .bar_haut {height: 93%;}
+.b7 .bar_bas {height: 7%;}
+.b8 .bar_haut {height: 92%;}
+.b8 .bar_bas {height: 8%;}
+.b9 .bar_haut {height: 91%;}
+.b9 .bar_bas {height: 9%;}
+.b10 .bar_haut {height: 90%;}
+.b10 .bar_bas {height: 10%;}
+.b11 .bar_haut {height: 89%;}
+.b11 .bar_bas {height: 11%;}
+.b12 .bar_haut {height: 88%;}
+.b12 .bar_bas {height: 12%;}
+.b13 .bar_haut {height: 87%;}
+.b13 .bar_bas {height: 13%;}
+.b14 .bar_haut {height: 86%;}
+.b14 .bar_bas {height: 14%;}
+.b15 .bar_haut {height: 85%;}
+.b15 .bar_bas {height: 15%;}
+.b16 .bar_haut {height: 84%;}
+.b16 .bar_bas {height: 16%;}
+.b17 .bar_haut {height: 83%;}
+.b17 .bar_bas {height: 17%;}
+.b18 .bar_haut {height: 82%;}
+.b18 .bar_bas {height: 18%;}
+.b19 .bar_haut {height: 81%;}
+.b19 .bar_bas {height: 19%;}
+.b20 .bar_haut {height: 80%;}
+.b20 .bar_bas {height: 20%;}
+.b21 .bar_haut {height: 79%;}
+.b21 .bar_bas {height: 21%;}
+.b22 .bar_haut {height: 78%;}
+.b22 .bar_bas {height: 22%;}
+.b23 .bar_haut {height: 77%;}
+.b23 .bar_bas {height: 23%;}
+.b24 .bar_haut {height: 76%;}
+.b24 .bar_bas {height: 24%;}
+.b25 .bar_haut {height: 75%;}
+.b25 .bar_bas {height: 25%;}
+.b26 .bar_haut {height: 74%;}
+.b26 .bar_bas {height: 26%;}
+.b27 .bar_haut {height: 73%;}
+.b27 .bar_bas {height: 27%;}
+.b28 .bar_haut {height: 72%;}
+.b28 .bar_bas {height: 28%;}
+.b29 .bar_haut {height: 71%;}
+.b29 .bar_bas {height: 29%;}
+.b30 .bar_haut {height: 70%;}
+.b30 .bar_bas {height: 30%;}
+.b31 .bar_haut {height: 69%;}
+.b31 .bar_bas {height: 31%;}
+.b32 .bar_haut {height: 68%;}
+.b32 .bar_bas {height: 32%;}
+.b33 .bar_haut {height: 67%;}
+.b33 .bar_bas {height: 33%;}
+.b34 .bar_haut {height: 66%;}
+.b34 .bar_bas {height: 34%;}
+.b35 .bar_haut {height: 65%;}
+.b35 .bar_bas {height: 35%;}
+.b36 .bar_haut {height: 64%;}
+.b36 .bar_bas {height: 36%;}
+.b37 .bar_haut {height: 63%;}
+.b37 .bar_bas {height: 37%;}
+.b38 .bar_haut {height: 62%;}
+.b38 .bar_bas {height: 38%;}
+.b39 .bar_haut {height: 61%;}
+.b39 .bar_bas {height: 39%;}
+.b40 .bar_haut {height: 60%;}
+.b40 .bar_bas {height: 40%;}
+.b41 .bar_haut {height: 59%;}
+.b41 .bar_bas {height: 41%;}
+.b42 .bar_haut {height: 58%;}
+.b42 .bar_bas {height: 42%;}
+.b43 .bar_haut {height: 57%;}
+.b43 .bar_bas {height: 43%;}
+.b44 .bar_haut {height: 56%;}
+.b44 .bar_bas {height: 44%;}
+.b45 .bar_haut {height: 55%;}
+.b45 .bar_bas {height: 45%;}
+.b46 .bar_haut {height: 54%;}
+.b46 .bar_bas {height: 46%;}
+.b47 .bar_haut {height: 53%;}
+.b47 .bar_bas {height: 47%;}
+.b48 .bar_haut {height: 52%;}
+.b48 .bar_bas {height: 48%;}
+.b49 .bar_haut {height: 51%;}
+.b49 .bar_bas {height: 49%;}
+.b50 .bar_haut {height: 50%;}
+.b50 .bar_bas {height: 50%;}
+.b51 .bar_haut {height: 49%;}
+.b51 .bar_bas {height: 51%;}
+.b52 .bar_haut {height: 48%;}
+.b52 .bar_bas {height: 52%;}
+.b53 .bar_haut {height: 47%;}
+.b53 .bar_bas {height: 53%;}
+.b54 .bar_haut {height: 46%;}
+.b54 .bar_bas {height: 54%;}
+.b55 .bar_haut {height: 45%;}
+.b55 .bar_bas {height: 55%;}
+.b56 .bar_haut {height: 44%;}
+.b56 .bar_bas {height: 56%;}
+.b57 .bar_haut {height: 43%;}
+.b57 .bar_bas {height: 57%;}
+.b58 .bar_haut {height: 42%;}
+.b58 .bar_bas {height: 58%;}
+.b59 .bar_haut {height: 41%;}
+.b59 .bar_bas {height: 59%;}
+.b60 .bar_haut {height: 40%;}
+.b60 .bar_bas {height: 60%;}
+.b61 .bar_haut {height: 39%;}
+.b61 .bar_bas {height: 61%;}
+.b62 .bar_haut {height: 38%;}
+.b62 .bar_bas {height: 62%;}
+.b63 .bar_haut {height: 37%;}
+.b63 .bar_bas {height: 63%;}
+.b64 .bar_haut {height: 36%;}
+.b64 .bar_bas {height: 64%;}
+.b65 .bar_haut {height: 35%;}
+.b65 .bar_bas {height: 65%;}
+.b66 .bar_haut {height: 34%;}
+.b66 .bar_bas {height: 66%;}
+.b67 .bar_haut {height: 33%;}
+.b67 .bar_bas {height: 67%;}
+.b68 .bar_haut {height: 32%;}
+.b68 .bar_bas {height: 68%;}
+.b69 .bar_haut {height: 31%;}
+.b69 .bar_bas {height: 69%;}
+.b70 .bar_haut {height: 30%;}
+.b70 .bar_bas {height: 70%;}
+.b71 .bar_haut {height: 29%;}
+.b71 .bar_bas {height: 71%;}
+.b72 .bar_haut {height: 28%;}
+.b72 .bar_bas {height: 72%;}
+.b73 .bar_haut {height: 27%;}
+.b73 .bar_bas {height: 73%;}
+.b74 .bar_haut {height: 26%;}
+.b74 .bar_bas {height: 74%;}
+.b75 .bar_haut {height: 25%;}
+.b75 .bar_bas {height: 75%;}
+.b76 .bar_haut {height: 24%;}
+.b76 .bar_bas {height: 76%;}
+.b77 .bar_haut {height: 23%;}
+.b77 .bar_bas {height: 77%;}
+.b78 .bar_haut {height: 22%;}
+.b78 .bar_bas {height: 78%;}
+.b79 .bar_haut {height: 21%;}
+.b79 .bar_bas {height: 79%;}
+.b80 .bar_haut {height: 20%;}
+.b80 .bar_bas {height: 80%;}
+.b81 .bar_haut {height: 19%;}
+.b81 .bar_bas {height: 81%;}
+.b82 .bar_haut {height: 18%;}
+.b82 .bar_bas {height: 82%;}
+.b83 .bar_haut {height: 17%;}
+.b83 .bar_bas {height: 83%;}
+.b84 .bar_haut {height: 16%;}
+.b84 .bar_bas {height: 84%;}
+.b85 .bar_haut {height: 15%;}
+.b85 .bar_bas {height: 85%;}
+.b86 .bar_haut {height: 14%;}
+.b86 .bar_bas {height: 86%;}
+.b87 .bar_haut {height: 13%;}
+.b87 .bar_bas {height: 87%;}
+.b88 .bar_haut {height: 12%;}
+.b88 .bar_bas {height: 88%;}
+.b89 .bar_haut {height: 11%;}
+.b89 .bar_bas {height: 89%;}
+.b90 .bar_haut {height: 10%;}
+.b90 .bar_bas {height: 90%;}
+.b91 .bar_haut {height: 9%;}
+.b91 .bar_bas {height: 91%;}
+.b92 .bar_haut {height: 8%;}
+.b92 .bar_bas {height: 92%;}
+.b93 .bar_haut {height: 7%;}
+.b93 .bar_bas {height: 93%;}
+.b94 .bar_haut {height: 6%;}
+.b94 .bar_bas {height: 94%;}
+.b95 .bar_haut {height: 5%;}
+.b95 .bar_bas {height: 95%;}
+.b96 .bar_haut {height: 4%;}
+.b96 .bar_bas {height: 96%;}
+.b97 .bar_haut {height: 3%;}
+.b97 .bar_bas {height: 97%;}
+.b98 .bar_haut {height: 2%;}
+.b98 .bar_bas {height: 98%;}
+.b99 .bar_haut {height: 1%;}
+.b99 .bar_bas {height: 99%;}
+.b100 .bar_haut {height: 0%;}
+.b100 .bar_bas {height: 100%;}
+
